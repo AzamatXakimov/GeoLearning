@@ -9,6 +9,10 @@ import { Azimuth } from "./pages/Categoryes/Azimuth/Azimuth/Azimuth";
 import { AzimuthTest } from "./pages/Categoryes/Azimuth/AzimuthTest/AzimuthTest";
 import { Africa } from "./pages/Categoryes/Africa/Africa/Africa";
 import { AfriceMountains } from "./pages/Categoryes/Africa/AfriceMountains/AfriceMountains";
+import { Seas } from "./pages/Main/Seas/Seas";
+import { CombineAnswers } from "./pages/Main/CombineAnswers/CombineAnswers";
+import { AfricaLiveZones } from "./pages/Categoryes/Africa/AfricaLiveZones/AfricaLiveZones";
+
 
 export const App = () => {
     return <>
@@ -20,9 +24,9 @@ export const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/test" element={<HomeTest />} />
                 {/* <Route path="/questions" element={< />} /> */}
-                {/* <Route path="/combine-answers" element={< />} /> */}
+                <Route path="/combine-answers" element={<CombineAnswers />} />
                 {/* <Route path="/rivers" element={< />} /> */}
-                {/* <Route path="/seas" element={< />} /> */}
+                <Route path="/seas" element={<Seas />} />
                 {/* <Route path="/azimuth-issues" element={< />} /> */}
                 {/* <Route path="/australian-climate" element={< />} /> */}
                 <Route path="/indian-ocean" element={<IndianOcean />} />
@@ -37,6 +41,7 @@ export const App = () => {
                 {/* AFRICA  */}
                 <Route path="/africa" element={<Africa/>}/>
                 <Route path="/africa/mountains" element={<AfriceMountains/>}/>
+                <Route path="/africa/live-zone" element={<AfricaLiveZones/>}/>
 
                 {/* Antarctica */}
 
