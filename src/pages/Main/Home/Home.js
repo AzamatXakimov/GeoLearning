@@ -46,7 +46,7 @@ export const Home = () => {
         },
         {
             text: "Hind okeani nomenklaturasi",
-            link: "/indian-ocean",
+            link: "/indian-ocean/map",
             img: planetImg,
         },
     ]

@@ -1,8 +1,8 @@
-import "./IndianOcean.scss";
+import "./IndianOceanMap.scss";
 import 'leaflet/dist/leaflet.css';
 import { WorldMap } from "../../../components/WorldMap/WorldMap";
 
-export const IndianOcean = () => {
+export const IndianOceanMap = () => {
     const data = [
         {
             id: 1,

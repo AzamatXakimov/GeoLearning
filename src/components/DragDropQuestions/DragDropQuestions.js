@@ -8,6 +8,7 @@ export const DragDropQuestions = ({data}) => {
 	const [answers, setAnswers] = useState([...data.answers]);
 
 
+
 	const handleDragStart = (event, itemId) => {
 		event.dataTransfer.setData('id', itemId);
 	};
@@ -63,14 +64,24 @@ export const DragDropQuestions = ({data}) => {
 		));
 	};
 
+
 	return (
-		<div className='drag-drop-wrapper'>
+        questions.length == 0 && answers.length == 0 ? <>
+            <h2 className="drag-drop-win-text">
+                Barchasini to'g'ri topdingiz!!
+            </h2>
+
+            <button className='drag-drop-again-btn' onClick={() => {
+                    setQuestions([...data.questions]);
+                    setAnswers([...data.answers]);
+            }}></button>
+        </>  : <div className='drag-drop-wrapper'>
             <ul className={`drag-drop-box ${data.questionsHaveImg ? "have-img" : ""}`}>
                 {renderItems(questions)}
             </ul>
             <ul className={`drag-drop-box ${data.answersHaveImg ? "have-img" : ""}`}>
                 {renderItems(answers)}
             </ul>
-		</div>
+        </div>
 	);
 };
