@@ -7,7 +7,7 @@ export const ArcticOcean = () => {
     const PacificOceanLinkInfo = [
         {
             text: "Test",
-            link: "/arctic-ocean",
+            link: "/arctic-ocean/test",
             img: atlasImg,
         },
         {

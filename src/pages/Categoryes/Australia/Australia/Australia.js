@@ -13,13 +13,13 @@ export const Australia = () => {
             img: globe2Img,
         },
         {
-            text: "Avstraliya Xarita",
+            text: "Avstraliya nomeklaturasi",
             link: "/australia",
             img: ironMapImg,
         },
         {
             text: "Avstraliya Test",
-            link: "/australia",
+            link: "/australia/test",
             img: globe6Img,
         },
         {

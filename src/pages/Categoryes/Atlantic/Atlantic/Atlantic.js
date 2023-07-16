@@ -10,7 +10,7 @@ export const Atlantic = () => {
     const AtlanticLinkInfo = [
         {
             text: "Test",
-            link: "/atlantic",
+            link: "/atlantic/test",
             img: globe2Img,
         },
         {

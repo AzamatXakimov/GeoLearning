@@ -11,7 +11,7 @@ export const SunSystem = () => {
         },
         {
             text: "Test",
-            link: "/sun-system",
+            link: "/sun-system/test",
             img: ironBoardImg,
         },
         {

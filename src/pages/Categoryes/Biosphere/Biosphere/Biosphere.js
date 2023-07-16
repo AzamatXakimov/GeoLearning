@@ -5,7 +5,7 @@ export const Biosphere = () => {
     const BiosphereLinkInfo = [
         {
             text: "Biosfer Test",
-            link: "/biosphere",
+            link: "/biosphere/test",
             img: globe2Img,
         },
         {

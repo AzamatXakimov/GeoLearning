@@ -10,7 +10,7 @@ export const Azimuth = () => {
         },
         {
             text: "Azimut Masalalar",
-            link: "/azimuth/test",
+            link: "/azimuth",
             img: mapAndPhoto,
         },
     ]

@@ -9,7 +9,7 @@ export const NorthAmerica = () => {
     const NorthAmericaLinkInfo = [
         {
             text: "Test",
-            link: "/north-america",
+            link: "/north-america/test",
             img: testPointImg,
         },
         {

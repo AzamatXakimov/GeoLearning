@@ -6,12 +6,12 @@ export const Universe = () => {
     const UniverseLinkInfo = [
         {
             text: "Test",
-            link: "/universe",
+            link: "/universe/test",
             img: atlasImg,
         },
         {
             text: "Krossvord",
-            link: "/universe",
+            link: "/universe/crossword",
             img: globe3Img,
         },
         {

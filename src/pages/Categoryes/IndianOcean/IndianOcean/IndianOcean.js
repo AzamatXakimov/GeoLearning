@@ -10,7 +10,7 @@ export const IndianOcean = () => {
     const IndianOceanLinkInfo = [
         {
             text: "Test",
-            link: "/indian-ocean",
+            link: "/indian-ocean/test",
             img: globe2Img,
         },
         {

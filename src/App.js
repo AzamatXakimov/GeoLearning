@@ -67,6 +67,19 @@ import { ArcticOceanContinue } from "./pages/Categoryes/ArcticOcean/ArcticOceanC
 import { AtlanticContinue } from "./pages/Categoryes/Atlantic/AtlanticContinue/AtlanticContinue";
 import { AustraliaContinue } from "./pages/Categoryes/Australia/AustraliaContinue/AustraliaContinue";
 import { SunSystemContinue } from "./pages/Categoryes/SunSystem/SunSystemContinue/SunSystemContinue";
+import { SunSystemTest } from "./pages/Categoryes/SunSystem/SunSystemTest/SunSystemTest";
+import { AntarcticaTest } from "./pages/Categoryes/Antarctica/AntarcticaTest/AntarcticaTest";
+import { AtmosphereTest } from "./pages/Categoryes/Atmosphere/AtmosphereTest/AtmosphereTest";
+import { NorthAmericaTest } from "./pages/Categoryes/NorthAmerica/NorthAmericaTest/NorthAmericaTest";
+import { PacificOceanTest } from "./pages/Categoryes/PacificOcean/PacificOceanTest/PacificOceanTest";
+import { SouthAmericaTest } from "./pages/Categoryes/SouthAmerica/SouthAmericaTest/SouthAmericaTest";
+import { ArcticOceanTest } from "./pages/Categoryes/ArcticOcean/ArcticOceanTest/ArcticOceanTest";
+import { IndianOceanTest } from "./pages/Categoryes/IndianOcean/IndianOceanTest/IndianOceanTest";
+import { BiosphereTest } from "./pages/Categoryes/Biosphere/BiosphereTest/BiosphereTest";
+import { UniverseTest } from "./pages/Categoryes/Universe/UniverseTest/UniverseTest";
+import { AustraliaTest } from "./pages/Categoryes/Australia/AustraliaTest/AustraliaTest";
+import { AtlanticOceanTest } from "./pages/Categoryes/Atlantic/AtlanticOceanTest/AtlanticOceanTest";
+import { AtmosphereContinue } from "./pages/Categoryes/Atmosphere/AtmosphereContinue/AtmosphereContinue";
 
 
 export const App = () => {
@@ -111,6 +124,7 @@ export const App = () => {
                     {/* MAP  */}
                 <Route path="/antarctica/sea-map" element={<AntarcticaSeaMap />}/>
                 <Route path="/antarctica/answer-separate" element={<AntarcticaAnswerSeparate />}/>
+                <Route path="/antarctica/test" element={<AntarcticaTest />} />
 
 
                 {/* Atmosphere */}
@@ -118,6 +132,8 @@ export const App = () => {
                 <Route path="/atmosphere/true-false" element={<AtmosphereTrueFalse />}/>
                 <Route path="/atmosphere/combine-answers" element={<AtmosphereCombineAnswers />}/>
                 <Route path="/atmosphere/crossword" element={<AtmosphereCrossword />}/>
+                <Route path="/atmosphere/continue-sentence" element={<AtmosphereContinue />} />
+                <Route path="/atmosphere/test" element={<AtmosphereTest />} />
 
 
                 {/* Euro Asia */}
@@ -138,6 +154,7 @@ export const App = () => {
                 <Route path="/north-america/hydrography" element={<NorthAmericaHydrography />}/>
                     {/* MAP  */}
                 <Route path="/north-america/islands" element={<NorthAmericaIslands />}/>
+                <Route path="/north-america/test" element={<NorthAmericaTest />} />
 
                 
                 {/* South America */}
@@ -146,18 +163,21 @@ export const App = () => {
                 <Route path="/south-america/nomenclature" element={<SouthAmericaNomeclature />}/>
                     {/* MAP  */}
                 <Route path="/south-america/hydrography" element={<SouthAmericaHydrography />}/>
+                <Route path="/south-america/test" element={<SouthAmericaTest />} />
 
 
                 {/* Pacific Ocean */}
                 <Route path="/pacific-ocean" element={<PacificOcean />}/>
                 <Route path="/pacific-ocean/combine-answers" element={<PacificOceanCombineAnswers />}/>
                 <Route path="/pacific-ocean/continue-sentence" element={<PacificOceanContinue />}/>
+                <Route path="/pacific-ocean/test" element={<PacificOceanTest />} />
 
 
                 {/* Arctic Ocean */}
                 <Route path="/arctic-ocean" element={<ArcticOcean />}/>
                 <Route path="/arctic-ocean/currents" element={<ArcticOceanCurrents />}/>
                 <Route path="/arctic-ocean/continue-sentence" element={<ArcticOceanContinue />}/>
+                <Route path="/arctic-ocean/test" element={<ArcticOceanTest />} />
 
 
                 {/* Indian Ocean */}
@@ -166,11 +186,13 @@ export const App = () => {
                 <Route path="/indian-ocean/sea-map" element={<IndianOceanSea />}/>
                 <Route path="/indian-ocean/climate" element={<IndianOceanClimate />}/>
                 <Route path="/indian-ocean/currents" element={<IndianOceanCurrents />}/>
+                <Route path="/indian-ocean/test" element={<IndianOceanTest />} />
 
 
                 {/* Biosphere */}
                 <Route path="/biosphere" element={<Biosphere />}/>
                 <Route path="/biosphere/combine-answers" element={<BiosphereCombineAnswers />}/>
+                <Route path="/biosphere/test" element={<BiosphereTest />} />
 
 
                 {/* Hydrosphere */}
@@ -188,6 +210,7 @@ export const App = () => {
                     {/* MAP  */}
                 <Route path="/universe/combine-pictures" element={<AtmosphereCombineAnswers />}/>
                 <Route path="/universe/crossword" element={<UniverseCrossword />}/>
+                <Route path="/universe/test" element={<UniverseTest />} />
 
 
                 {/* Oceans */}
@@ -200,6 +223,7 @@ export const App = () => {
                 <Route path="/australia/climate" element={<AustraliaClimate />}/>
                 <Route path="/australia/crossword" element={<AustraliaCrossword />}/>
                 <Route path="/australia/continue-sentence" element={<AustraliaContinue />}/>
+                <Route path="/australia/test" element={<AustraliaTest />} />
 
 
                 {/* Atlantic ocean*/}
@@ -210,6 +234,7 @@ export const App = () => {
                 <Route path="/atlantic/currents" element={<AtlanticCurrents />}/>
                 <Route path="/atlantic/nature-zones" element={<AtlanticNatureZones />}/>
                 <Route path="/atlantic/continue-sentence" element={<AtlanticContinue />}/>
+                <Route path="/atlantic/test" element={<AtlanticOceanTest />} />
 
 
 
@@ -217,6 +242,7 @@ export const App = () => {
                 <Route path="/sun-system" element={<SunSystem />}/>
                 <Route path="/sun-system/crossword" element={<SunSystemCrossword />}/>
                 <Route path="/sun-system/continue-sentence" element={<SunSystemContinue />}/>
+                <Route path="/sun-system/test" element={<SunSystemTest />}/>
 
 
 

@@ -8,7 +8,7 @@ export const Antarctica = () => {
     const africaLinkInfo = [
         {
             text: "Antarktida Test",
-            link: "/antarctica",
+            link: "/antarctica/test",
             img: globe2Img,
         },
         // {

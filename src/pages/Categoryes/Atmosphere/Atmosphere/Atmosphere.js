@@ -9,7 +9,7 @@ export const Atmosphere = () => {
     const atmosphereLinkInfo = [
         {
             text: "Atmosfera Test",
-            link: "/atmosphere",
+            link: "/atmosphere/test",
             img: stormImg,
         },
         {
@@ -19,7 +19,7 @@ export const Atmosphere = () => {
         },
         {
             text: "Atmosfera Savollar",
-            link: "/atmosphere",
+            link: "/atmosphere/continue-sentence",
             img: nightSkyImg,
         },
         {

@@ -12,7 +12,7 @@ export const SouthAmerica = () => {
         },
         {
             text: "Test",
-            link: "/south-america",
+            link: "/south-america/test",
             img: testPointImg,
         },
         {

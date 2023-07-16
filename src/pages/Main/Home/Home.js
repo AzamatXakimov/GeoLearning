@@ -7,6 +7,12 @@ import riversImg from "../../../assets/images/rivers.jpg";
 import cloudySkyImg from "../../../assets/images/cloudy-sky.jpg";
 import stormSkyImg from "../../../assets/images/storm-sky.webp";
 import planetImg from "../../../assets/images/planet.jpg";
+import { Hero } from "../../../components/Hero/Hero";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 export const Home = () => {
     const homeLinksInfo = [
         {
@@ -51,17 +57,54 @@ export const Home = () => {
         },
     ]
 
-    return <>
-        <section className="site-home-tasks">
-            <div className="container">
-                <ul className="site-home-tasks-list">
-                    {homeLinksInfo.map((item, i) => (
-                        <li className="site-home-tasks-item" key={i}>
-                            <LinkCard obj={item}/>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </section>
-    </>
+    return (
+		<>
+			<section className='site-home-tasks'>
+				<div className='container'>
+					<Hero />
+					<ul className='site-home-tasks-list'>
+						<Swiper
+							slidesPerView={1}
+							spaceBetween={50}
+							freeMode={true}
+							autoplay={{
+								delay: 3000,
+								disableOnInteraction: false,
+							}}
+							pagination={{
+								clickable: true,
+							}}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                700: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 50,
+                                },
+                            }}
+							modules={[FreeMode, Pagination, Autoplay]}
+							className='mySwiper'
+						>
+							{homeLinksInfo.map((item, index) => (
+								<SwiperSlide>
+									<li
+										className='site-home-tasks-item'
+										key={index}
+									>
+										<LinkCard obj={item} />
+									</li>
+								</SwiperSlide>
+							))}
+						</Swiper>
+					</ul>
+				</div>
+			</section>
+		</>
+	);
 }
