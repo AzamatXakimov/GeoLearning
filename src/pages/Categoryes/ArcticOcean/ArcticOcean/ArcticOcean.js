@@ -17,7 +17,7 @@ export const ArcticOcean = () => {
         },
         {
             text: "Gidrosfera Mosini topish",
-            link: "/arctic-ocean",
+            link: "/arctic-ocean/continue-sentence",
             img: soltSeasImg,
         },
         {

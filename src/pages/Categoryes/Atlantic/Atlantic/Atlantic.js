@@ -15,7 +15,7 @@ export const Atlantic = () => {
         },
         {
             text: "Savollar",
-            link: "/atlantic",
+            link: "/atlantic/continue-sentence",
             img: mapAndPhotoImg,
         },
         {

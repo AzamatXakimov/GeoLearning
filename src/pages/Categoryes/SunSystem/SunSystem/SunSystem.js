@@ -16,7 +16,7 @@ export const SunSystem = () => {
         },
         {
             text: "Javoblarni kiriting",
-            link: "/sun-system",
+            link: "/sun-system/continue-sentence",
             img: globe6Img,
         },
     ]

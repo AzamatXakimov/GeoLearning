@@ -63,6 +63,10 @@ import { UniverseCrossword } from "./pages/Categoryes/Universe/UniverseCrossword
 import { AustraliaCrossword } from "./pages/Categoryes/Australia/AustraliaCrossword/AustraliaCrossword";
 import { SunSystemCrossword } from "./pages/Categoryes/SunSystem/SunSystemCrossword/SunSystemCrossword";
 import { PacificOceanContinue } from "./pages/Categoryes/PacificOcean/PacificOceanContinue/PacificOceanContinue";
+import { ArcticOceanContinue } from "./pages/Categoryes/ArcticOcean/ArcticOceanContinue/ArcticOceanContinue";
+import { AtlanticContinue } from "./pages/Categoryes/Atlantic/AtlanticContinue/AtlanticContinue";
+import { AustraliaContinue } from "./pages/Categoryes/Australia/AustraliaContinue/AustraliaContinue";
+import { SunSystemContinue } from "./pages/Categoryes/SunSystem/SunSystemContinue/SunSystemContinue";
 
 
 export const App = () => {
@@ -153,6 +157,7 @@ export const App = () => {
                 {/* Arctic Ocean */}
                 <Route path="/arctic-ocean" element={<ArcticOcean />}/>
                 <Route path="/arctic-ocean/currents" element={<ArcticOceanCurrents />}/>
+                <Route path="/arctic-ocean/continue-sentence" element={<ArcticOceanContinue />}/>
 
 
                 {/* Indian Ocean */}
@@ -194,6 +199,7 @@ export const App = () => {
                 <Route path="/australia/map" element={<AustraliaMap />}/>
                 <Route path="/australia/climate" element={<AustraliaClimate />}/>
                 <Route path="/australia/crossword" element={<AustraliaCrossword />}/>
+                <Route path="/australia/continue-sentence" element={<AustraliaContinue />}/>
 
 
                 {/* Atlantic ocean*/}
@@ -203,12 +209,14 @@ export const App = () => {
                 <Route path="/atlantic/adaptation" element={<AtlanticAdaptation />}/>
                 <Route path="/atlantic/currents" element={<AtlanticCurrents />}/>
                 <Route path="/atlantic/nature-zones" element={<AtlanticNatureZones />}/>
+                <Route path="/atlantic/continue-sentence" element={<AtlanticContinue />}/>
 
 
 
                 {/* Solar system */}
                 <Route path="/sun-system" element={<SunSystem />}/>
                 <Route path="/sun-system/crossword" element={<SunSystemCrossword />}/>
+                <Route path="/sun-system/continue-sentence" element={<SunSystemContinue />}/>
 
 
 

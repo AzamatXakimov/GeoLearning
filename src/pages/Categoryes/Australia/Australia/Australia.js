@@ -29,7 +29,7 @@ export const Australia = () => {
         },
         {
             text: "Avstraliya Materigi Ichki Suvlari",
-            link: "/australia",
+            link: "/australia/continue-sentence",
             img: blueSeaImg,
         },
         {
