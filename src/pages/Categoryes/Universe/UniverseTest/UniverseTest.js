@@ -10,47 +10,83 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
+    text: "Koinotga tegishli asosiy tushunchalar berilgan qatorni ko'rsating!",
     answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
-    ],
-    correct: 1,
-    selection: null,
-  },
-  {
-    id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
-    correct: 2,
-    selection: null,
-  },
-  {
-    id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
-    answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
+      "Olam, metagalaktika, galaktika",
+      "Yulduzlar, Quyosh tizimi, sayyoralar",
+      "Yo'ldoshlar, asteroidlar, meteorlar, meteoritlar",
       "Barchasi to'g'ri",
     ],
     correct: 3,
     selection: null,
   },
   {
-    id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
+    id: 1,
+    text: "Olam vujudga kelishiga asos bo'lgan “Katta portlash” hodisasi necha milliard yil avval sodir bo'lgan?",
+    answers: ["8-10", "10-12", "15-20", "15-18"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 2,
+    text: "Galaktikada gaz va chang tumanliklaridan iborat galaktikalar to'plamiga nima deyiladi?",
+    answers: ["Metroit", "Metagalaktika", "Olam", "Galaktika"],
     correct: 1,
     selection: null,
   },
   {
+    id: 3,
+    text: "Yerga eng yaqin bo'lgan galaktika nomi berilgan qatorni ko'rsating!",
+    answers: [
+      "Ekvatorial",
+      "Sombrero galaktikasi",
+      "Andromeda galaktikasi",
+      "Deva galaktikasi",
+    ],
+    correct: 2,
+    selection: null,
+  },
+  {
     id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
+    text: "Somon yo'li galaktikasida hamma yulduzlar galaktika o'qi atrofida aylanadi. U sekundiga taxminan 250 km tezlik bilan harakat qilib, necha mln. yorug'lik yilida galaktika atrofini bir marta to'liq aylanib chiqadi?",
+    answers: ["300", "200", "80", "150"],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Yulduzlarning yuzasida harorat necha gradusgacha yetishi mumkin?",
+    answers: [
+      "5000°C dan 50 000°C gacha",
+      "7000°C dan 40 000°C gacha",
+      "1000°C dan 60 000°C gacha",
+      "3000°C dan 30 000°C gacha",
+    ],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 6,
+    text: "Yulduzlar tarkibida qaysi moddalar ko'pligi hisobiga energiya va nur hosil bo'ladi?",
+    answers: [
+      "Geliy va vodorod",
+      "Vodorod va azot",
+      "Azot va kislorod",
+      "Turli xil inert gazlar",
+    ],
     correct: 0,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Osmondagi yulduzlar tarqalish miqyosini aniqlashga uringan birinchi astronom kim?",
+    answers: [
+      "Geminiano Montanari",
+      "Edward Pickering",
+      "Angelo Secchi",
+      "William Herschel",
+    ],
+    correct: 3,
     selection: null,
   },
 ];
@@ -78,7 +114,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function UniverseTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +192,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Koinot Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

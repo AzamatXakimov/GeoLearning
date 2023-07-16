@@ -10,47 +10,92 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
+    text: "Strabon davrida Atlantika okeani kartalarda qanday nom bilan tasvirlangan?",
     answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
+      "Mudhish dengiz",
+      "Qorong'ulik dengizi",
+      "G'arbiy okean",
+      "Gaditan dengizi",
+    ],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 1,
+    text: "Eramizdan oldingi IV asrda Shimoliy Atlantika bo'ylab suzishni amalga oshirgan va suzish paytida bir qator hududlarning kengliklarini aniqlagan, suvning ko'tarilish jarayonini o'rganib, uning sababini Oy bilan Quyoshning o'ziga tortish qonuniga bog'liq ekanini birinchi bo'lib isbotlab bergan tarixiy shaxs kim?",
+    answers: ["Aristotel", "Geradot", "Strabon", "Pifey"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 2,
+    text: "Atlantika okeani nomi birinchi bor 1507-yilda kim tomonidan tuzilgan kartalarda berilgan?",
+    answers: ["Vald Zemyuller", "A.R.Beruniy", "Eratosfen", "Merkator"],
+    correct: 0,
+    selection: null,
+  },
+  {
+    id: 3,
+    text: "1519-1523 yillarda kim o'zining dunyo bo'ylab qilgan sayohati paytida Atlantika okeanini kesib o'tgan?",
+    answers: ["I.F.Kruzenshtern", "Vasko da Gama", "F.Magellan", "J.Kuk"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 4,
+    text: "Atlantika okeaniga mansub dengizlar berilgan qatorni belgilang!",
+    answers: [
+      "Pirrey, Adriatika, Qizil",
+      "Sargasso, Baffin, Labrador",
+      "Levant, Egey, Norvegiya",
+      "Boltiq, Irlandiya, Kara",
     ],
     correct: 1,
     selection: null,
   },
   {
-    id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
-    correct: 2,
+    id: 5,
+    text: "Quyidagi qo'ltiqlardan qaysi biri Atlantika okeaniga tegishli?",
+    answers: ["Meksika", "Gudzon", "Avliyo Lavrentiy", "Barchasi to'g'ri"],
+    correct: 0,
     selection: null,
   },
   {
-    id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
+    id: 6,
+    text: "Atlantika okeani ekvatoriyasidagi vulkanik orollar ko'rsatilgan qatorni ko'rsating!",
     answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
+      "Madeyra, Yashil burun, Asenshen",
+      "Bermud, Yan-Maen, Azor",
+      "San-Paulu, Vozneseniya, Avliyo Yelena",
       "Barchasi to'g'ri",
     ],
     correct: 3,
     selection: null,
   },
   {
-    id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
-    correct: 1,
+    id: 7,
+    text: "Atlantika okeanida juda chuqur suv osti cho'kmalari ham mavjud bo'lib, 8428 m chuqurlikdagi cho'kmaning nomi to'g'ri berilgan qatorni toping!",
+    answers: ["Argentina", "Puerto-Riko", "Janubiy Sanichev", "Freyzer"],
+    correct: 2,
     selection: null,
   },
   {
-    id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
-    correct: 0,
+    id: 8,
+    text: "Shimoliy Atlantikaga Shimoliy Muz okeanidan har yili necha km³ muz oqib keladi?",
+    answers: ["1000 km³", "5000 km³", "10000 km³", "20000 km³"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 9,
+    text: "Atlantika okeanidagi iliq oqim berilgan qatorni belgilang!",
+    answers: [
+      "Golfstrim, Kanar",
+      "Braziliya, Gviana",
+      "Bengala, Gvineya",
+      "Folklend, Antil",
+    ],
+    correct: 1,
     selection: null,
   },
 ];
@@ -78,7 +123,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function AtlanticOceanTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +201,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Atlantika okeani Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

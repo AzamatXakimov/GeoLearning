@@ -10,47 +10,92 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
+    text: "Shimoliy Muz okeanining suv hajmi necha km³ni tashkil qiladi?",
+    answers: ["38 mln.", "28 mln.", "18 mln.", "5 mln."],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 1,
+    text: "Shimoliy Muz okeani dastlab mustaqil okean sifatida kim tomonidan ajratilgan va Giperborey okeani deb nomlangan?",
+    answers: ["Strabon", "B.Varenius", "V.Barents", "Yugorskiy Shar"],
+    correct: 0,
+    selection: null,
+  },
+  {
+    id: 2,
+    text: "Shimoliy Muz okeani Atlantika okeanidan necha marta kichik?",
+    answers: ["4", "7", "6.35", "5"],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 3,
+    text: "Buyuk shimol ekspeditsiyasi qachon amalga oshirilgan?",
     answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
+      "1878-1879-yillarda",
+      "1827-1829-yillarda",
+      "1733-1743-yillarda",
+      "1893-1896-yillarda",
+    ],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 4,
+    text: "Shimoliy Muz okeaniga mansub dengiz berilgan qatorni belgilang!",
+    answers: [
+      "Levant, Egey, Norvegiya",
+      "Kara, Bofort, Grenlandiya",
+      "Boltiq, Irlandiya, Kara",
+      "Pirrey, Adriatika, Qizil",
     ],
     correct: 1,
     selection: null,
   },
   {
-    id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
-    correct: 2,
+    id: 5,
+    text: "Quyidagi qo'ltiqlardan qaysi biri Shimoliy Muz okeaniga tegishli?",
+    answers: ["Saturn", "Venera", "Neptun", "Yupiter"],
+    correct: 3,
     selection: null,
   },
   {
-    id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
+    id: 6,
+    text: "Qaysi sayyora qadimiy rimliklarning vaqt va hosil xudosi nomi bilan atalgan?",
+    answers: ["Ob", "Mezen", "Amundsen", "Barchasi to'g'ri"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Shimoliy Muz okeani ekvatoriyasidagi tog' tizmalari ko'rsatilgan qatorni ko'rsating!",
     answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
+      "Mendeleyev tizmasi",
+      "Lomonosov tizmasi",
+      "Gekkel tizmasi",
       "Barchasi to'g'ri",
     ],
     correct: 3,
     selection: null,
   },
   {
-    id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
-    correct: 1,
+    id: 8,
+    text: "Alfa platosi okeanning qaysi qismida joylashgan?",
+    answers: [
+      "Kara dengizi shimolida",
+      "Laptevlar dengizida",
+      "Grendlandiya va Elsmir orollariga yaqin joyda",
+      "Chukotka dengizidan shimol tomonda",
+    ],
+    correct: 2,
     selection: null,
   },
   {
-    id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
-    correct: 0,
+    id: 9,
+    text: "Suv sathidan 25 m chuqurlikkacha bo'lgan qatlamda suvning sho'rligi qancha bo'ladi?",
+    answers: ["25-29 %o", "32 %o", "15-19 %o", "23 %o"],
+    correct: 1,
     selection: null,
   },
 ];
@@ -78,7 +123,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function ArcticOceanTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +201,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Shimoliy Muz okeani Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

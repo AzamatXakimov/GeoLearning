@@ -10,46 +10,86 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
-    answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
-    ],
+    text: "Antarktidaning maydoni necha km²?",
+    answers: ["12 mln", "14 mln", "13 mln", "5 mln"],
     correct: 1,
     selection: null,
   },
   {
     id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
+    text: "Eng yirik shelf muzligi okeanning qaysi dengizning janubiy yarmini qoplagan?",
+    answers: ["Ueddell", "Ross", "Bellinsgauzen", "Lazerov"],
     correct: 2,
     selection: null,
   },
   {
     id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
+    text: "Muz bosmagan maydon materik maydonining necha %ini egallaydi?",
+    answers: ["0,8 %", "0,2 %", "0,5 %", "0,6 %"],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 3,
+    text: "Materik muzining umumiy hajmi qanchani tashkil qiladi?",
+    answers: ["11 mln km³", "62 mln km³", "32 mln km³", "24 mln km³"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 4,
+    text: "Antarktidaning eng baland cho'qqisi qaysi?",
+    answers: ["Erebus", "Vinson tog'i", "Ballen", "Terror"],
+    correct: 0,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Antarktidani o'rganishga kimlar boshchiligidagi ekspeditsiyalar tashrif buyurgan?",
     answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
+      "F. Bellingsgauzen va M.Lazerov",
+      "R.Amundsen",
+      "R.Skott",
       "Barchasi to'g'ri",
     ],
     correct: 3,
     selection: null,
   },
   {
-    id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
+    id: 6,
+    text: "Antarktida yarim oroli materikni qaysi qismida joylashgan?",
+    answers: ["Janubida", "Vostok ilmiy stansiyasida", "G'arbida", "Sharqida"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Janubiy qutbga birinchi bo'lib kimlar yetib borishadi?",
+    answers: [
+      "Vasko da Gama",
+      "R.Amundsen va R.Skot",
+      "F.Ch.Bellinsgauzen va M.P.Lazarev",
+      "Bering va Chirikovlar",
+    ],
     correct: 1,
     selection: null,
   },
   {
-    id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
+    id: 8,
+    text: "Materikda yanvarning o'rtacha harorati necha gradusni tashkil etadi?",
+    answers: ["-89,2°C", "-60°C, -70°C", "-52°C", "-20°C"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 9,
+    text: "Materikda yiliga 340 kunlab qanday jarayon sodir bo'ladi?",
+    answers: [
+      "Qorbo'ronlari",
+      "Yomg'irli davr",
+      "Qutb tuni",
+      "Quyoshli kunlar",
+    ],
     correct: 0,
     selection: null,
   },
@@ -78,7 +118,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function AntarcticaTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +196,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Antarktida Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

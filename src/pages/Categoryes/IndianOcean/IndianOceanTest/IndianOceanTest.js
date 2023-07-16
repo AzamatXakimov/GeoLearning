@@ -10,47 +10,92 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
-    answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
-    ],
+    text: "Hind okeani ekvatoriyasining maydoni necha km²ga teng?",
+    answers: ["90 mln.", "76.2 mln.", "180 mln.", "78.2 mln."],
     correct: 1,
     selection: null,
   },
   {
     id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
+    text: "XV asrda yashab o'tgan qaysi xitoylik Hind okeaniga yetti marta katta ekspeditsiya uyushtiradi?",
+    answers: ["Chjan Syan", "A. Nikitin", "Chjen Xe", "Syuan Szan"],
     correct: 2,
     selection: null,
   },
   {
     id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
+    text: "`Uch dengiz osha` kitobining muallifi kim?",
+    answers: ["Jeyms Kuk", "Vasko da Gama", "Myunster", "Afanasiy Nikitin"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 3,
+    text: "Hind okeani birinchi marta 1555 yilda kimning kartasida o'z o'rnini egallaydi?",
+    answers: ["Vasko da Gama", "Myunster", "Jeyms Kuk", "Uayvil Tomson"],
+    correct: 0,
+    selection: null,
+  },
+  {
+    id: 4,
+    text: "Hind okeanini kompleks o'rganish nechanchi asrda boshlanadi?",
+    answers: ["XVI asrda", "XVIII asrda", "XV asrda", "XIX asrning oxirida"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Hind okeani haqidagi 50 jildlik (30000 bet) ilmiy to'plam qaysi ekspeditsiya a'zolari tomonidan to'plandi va nashr qilindi?",
     answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
+      "`Dmitriy Mendeleev`, rus ekspeditsiyasi",
+      "`Chellenjer` kemasi, ingliz ekspeditsiyasi",
+      "`Vityaz` kemasi, ingliz ekspeditsiyasi",
+      "`Valdiviya` kemasi, nemis ekspeditsiyasi",
+    ],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 6,
+    text: "1900-yilda Hind okeanining batimetrik kartasini kim tuzadi?",
+    answers: ["Uayvil Tomson", "Jeyms Kuk", "G.Shott", "Ch.Darvin"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Hind okeani osti tog' tizmasi berilgan qatorni keltiring!",
+    answers: [
+      "Arabiston-Hind tog' tizmasi",
+      "G'arbiy Hind tog' tizmasi",
+      "Sharqiy Hind tog' tizmasi",
       "Barchasi to'g'ri",
     ],
     correct: 3,
     selection: null,
   },
   {
-    id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
+    id: 8,
+    text: "Hind okeanidagi vulkanik orollar berilgan qatorni ko'rsating!",
+    answers: [
+      "Maskaren, Komor",
+      "Tasmaniya, Shri-Lanka",
+      "Makdonell va Masgreiv",
+      "Andaman, Nikobar",
+    ],
     correct: 1,
     selection: null,
   },
   {
-    id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
-    correct: 0,
+    id: 9,
+    text: "Hind okeani suv osti yoriqlari berilgan qatorni ko'rsating!",
+    answers: [
+      "Amsterdam, Tasmanov",
+      "Ouen, Mavrikiya, Prins-Eduard",
+      "Diamantin, Ob",
+      "Barchasi to'g'ri",
+    ],
+    correct: 3,
     selection: null,
   },
 ];
@@ -78,7 +123,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function IndianOceanTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +201,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Hind okeani Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

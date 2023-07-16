@@ -10,47 +10,82 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
+    text: "Avstraliya iqlimiga nima ko'proq ta'sir qiladi?",
     answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
+      "Atmosfera sirkulyatsiyasi",
+      "Yog'ingarchilikning ko'pligi",
+      "Quruq ob-havo",
+      "Mavsumiy iqlim o'zgarishi",
     ],
-    correct: 1,
+    correct: 0,
     selection: null,
   },
   {
     id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
-    correct: 2,
-    selection: null,
-  },
-  {
-    id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
-    answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
-      "Barchasi to'g'ri",
-    ],
+    text: "Tasmaniya va Yangi Zellandiya orollari 1 sm² yuzaga necha kkal. radiatsiya oladi?",
+    answers: ["180 kkal", "160 kkal", "150 kkal", "120 kkal"],
     correct: 3,
     selection: null,
   },
   {
-    id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
+    id: 2,
+    text: "Avstraliya materigi va atrofidagi orollarda nechta tabiat mintaqasi shakllangan?",
+    answers: ["3 ta", "5 ta", "8 ta", "2 ta"],
     correct: 1,
     selection: null,
   },
   {
+    id: 3,
+    text: "Avstraliya materigida qaysi iqlim mintaqasi katta masofani egallaydi?",
+    answers: ["Ekvatorial", "Subekvatorial", "Tropic", "Subtropic"],
+    correct: 2,
+    selection: null,
+  },
+  {
     id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
+    text: "Tasmaniya va Yangi Zellandiya orolining janubiy qismlari qaysi iqlim mintaqasiga to'g'ri keladi?",
+    answers: ["Subtropic", "Mo'tadil", "Subekvatorial", "Tropic"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Ekvatorial mintaqada o'rtacha oylik harorat necha gradusni tashkil qiladi?",
+    answers: ["+24°C, +28°C", "+20°C, +24°C", "+18°C, +20°C", "+5°C, +10°C"],
     correct: 0,
+    selection: null,
+  },
+  {
+    id: 6,
+    text: "Materikning ichki hududlarida butun yil bo'yi kontinental tropik havo hukmron va yillik yog'in miqdori necha mmdan oshmaydi?",
+    answers: ["400 mm", "150 mm", "100 mm", "250 mm"],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Materikning shimoli-g'arbida qanday plato joylashgan?",
+    answers: ["Gibson", "Kimberli", "Freyzer", "Nallarbol"],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 8,
+    text: "Materik markazida qanday tog'lar ko'tarilgan?",
+    answers: [
+      "Barrington tepalari",
+      "Freyzer tog'ligi",
+      "Darling tizmasi",
+      "Makdonell va Masgreiv",
+    ],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 9,
+    text: "Materikning g'arbida joylashgan cho'llarni ko'rsating!",
+    answers: ["Katta Qumli cho'l", "Viktoriya", "Gibson", "Barchasi to'g'ri"],
+    correct: 3,
     selection: null,
   },
 ];
@@ -78,7 +113,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function AustraliaTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +191,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Avstraliya Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

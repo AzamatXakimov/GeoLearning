@@ -10,47 +10,82 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
-    answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
-    ],
-    correct: 1,
+    text: "Biosferaning birlamchi shakllanishi bundan 3 mlrd yil ilgari qaysi erada sodir bo'lgan?",
+    answers: ["Paleozoy", "Kaynazoy", "Arxey", "Proterozoy"],
+    correct: 3,
     selection: null,
   },
   {
     id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
-    correct: 2,
+    text: "Yer sharida hayot qatlami biosferani birinchi bo'lib ajratgan olim kim?",
+    answers: ["V.Vernadskiy", "E.Zyuss", "G.Grigorev", "A.I.Oparin"],
+    correct: 1,
     selection: null,
   },
   {
     id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
-    answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
-      "Barchasi to'g'ri",
-    ],
+    text: "Yer yuzasidagi organizmning evalyutsion taraqqiyoti va (hujayra) tuzilishi jihatidan nechta turga bo'linadi?",
+    answers: ["3 ta", "2 ta", "6 ta", "4 ta"],
     correct: 3,
     selection: null,
   },
   {
     id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
-    correct: 1,
+    text: "Bu organizmlarga yashil o'simliklar kirib, ular geografik muhitda noorganik moddalarni organik maddalarga aylantirib beradi. Fanda ular qanday nomlanadi?",
+    answers: ["Bakteriyalar", "Zamburug'lar", "Avtotrof", "Geterotrof"],
+    correct: 2,
     selection: null,
   },
   {
     id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
+    text: "Tirik organizmlar tog' jinslarining nurashida ishtirok etsa bu qanday nurash deb ataladi?",
+    answers: [
+      "Kimyoviy nurash",
+      "Organik nurash",
+      "Fizik nurash",
+      "To'g'ri javob yo'q",
+    ],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Atmosferadagi kislorod necha yilda yangilanadi?",
+    answers: ["1000 yilda", "7 yilda", "5800 yilda", "400 yilda"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 6,
+    text: "Tuproqda tirik organizmlarning qoldiqlarining to'planishi natijasida qanday qoramtir organik modda vujudga keladi?",
+    answers: ["Gumus", "Temir", "Oltingugurt", "Azot"],
     correct: 0,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Tayyor organik moddalarni iste'mol qilish hisobiga yashovchi organizmlar qaysilar?",
+    answers: ["Amyobalar", "Avtotroflar", "Psilofitlar", "Geterotroflar"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 8,
+    text: "Quriqlikdagi biomassalar okeanlardagidan qancha ko'p?",
+    answers: ["100 martta", "700 martta", "200 martta", "570 martta"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 9,
+    text: "Quruqlikdagi eng kop biomassa qayerlarda tarqalgan?",
+    answers: [
+      "Tundra va tayga zonalarida",
+      "Ekvatorial va tropik o'rmonlarda",
+      "Mo'tadil mintaqa o'rmonlarida",
+      "Janubiy tropik mintaqalarda",
+    ],
+    correct: 1,
     selection: null,
   },
 ];
@@ -78,7 +113,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function BiosphereTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +191,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Biosfera Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

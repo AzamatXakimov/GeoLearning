@@ -10,47 +10,77 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
-    answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
-    ],
-    correct: 1,
+    text: "Atmosfera tarkibida kislorod necha foizni tashkil etadi?",
+    answers: ["20,93 %", "78,08 %", "0,93 %", "0,03 %"],
+    correct: 0,
     selection: null,
   },
   {
     id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
-    correct: 2,
-    selection: null,
-  },
-  {
-    id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
-    answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
-      "Barchasi to'g'ri",
-    ],
+    text: "Atmosferaning umumiy massasida suv bug'lari qancha km³ni tashkil etadi?",
+    answers: ["15 ming", "20 ming", "18 ming", "13 ming"],
     correct: 3,
     selection: null,
   },
   {
-    id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
+    id: 2,
+    text: "Atmosfera massasining 80%i atmosfera qatlamlarining qaysi birida to'plangan?",
+    answers: ["Termosfera", "Troposfera", "Stratosfera", "Biosfera"],
     correct: 1,
     selection: null,
   },
   {
+    id: 3,
+    text: "Tropopuazaning qalinligi necha kmni tashkil qiladi?",
+    answers: ["3 km", "4 km", "1 km", "2 km"],
+    correct: 2,
+    selection: null,
+  },
+  {
     id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
+    text: "Stratosferada atmosferaning necha % massasi to'plangan?",
+    answers: ["30 %", "15 %", "20 %", "10 %"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Atmosferaning qaysi qatlami Quyoshning rentgen nurlarini yutib qoladi va shu bilan Yer yuzidagi hayotni uning zararli ta'siridan saqlaydi?",
+    answers: ["Ionosfera", "Troposfera", "Ekzosfera", "Mezosfera"],
     correct: 0,
+    selection: null,
+  },
+  {
+    id: 6,
+    text: "Atmosferaning qaysi qatlami asosan geliy va vodoroddan iborat?",
+    answers: ["Mezosfera", "Termosfera", "Ionosfera", "Ekzosfera"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Havo massalarini bir-biridan ajratib turadigan shartli yuzaga nima deyiladi?",
+    answers: [
+      "Konvektiv oqim",
+      "Atmosfera frontlari",
+      "Front chizig'i",
+      "Havo massalari",
+    ],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 8,
+    text: "Ionosferaning 80 km dan 300 km gacha balandlikda bo'lgan quyi qismi nima deb ataladi?",
+    answers: ["Tropopuaza", "Ekzosfera", "Termosfera", "Termopuza"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 9,
+    text: "Ekzosferada harorat taxminan qanchagacha ko'tariladi?",
+    answers: ["1500°C", "1900°-2000°C", "1400°C, 1900°C", "220°C, 240°C"],
+    correct: 1,
     selection: null,
   },
 ];
@@ -78,7 +108,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function AtmosphereTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +186,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Atmosfera Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

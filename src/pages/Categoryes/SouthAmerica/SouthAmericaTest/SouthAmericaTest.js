@@ -10,47 +10,63 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
-    answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
-    ],
-    correct: 1,
+    text: "Titikaka ko'li necha metr balandlikda joylashgan?",
+    answers: ["6960 m", "5897 m", "4058 m", "3810 m"],
+    correct: 3,
     selection: null,
   },
   {
     id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
-    correct: 2,
+    text: "Iguasu sharsharasi qaysi daryoda joylashgan?",
+    answers: ["Parana", "Orinoko", "Paragvay", "San-Fransisko"],
+    correct: 0,
     selection: null,
   },
   {
     id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
-    answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
-      "Barchasi to'g'ri",
-    ],
+    text: "La-Plata qo'ltig'i materikning qaysi tarafida joylashgan?",
+    answers: ["G'arbida", "Janubida", "Shimoli-Sharqida", "Janubi-Sharqida"],
     correct: 3,
     selection: null,
   },
   {
     id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
+    text: "Materikda pampalar nechanchi kengliklar orasida joylashgan?",
+    answers: ["10-20° j.k", "30-40° j.k", "50-60° j.k", "0-10° j.k"],
     correct: 1,
     selection: null,
   },
   {
     id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
-    correct: 0,
+    text: "Orollarda joylashgan qo'riqxona nomi keltirilgan qatorni belgilang?",
+    answers: ["Alberto-Agestini", "Lanin", "Islas-Guaytekas", "Los-Glasyares"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Patagoniya materikning qaysi qismida joylashgan?",
+    answers: [
+      "Braziliya yassitog'ligidan g'arbda",
+      "La-Plata pasttekisligidan janubda",
+      "Gviana yassitog'ligidan shimolda",
+      "Amazonka pasttekisligining sharqida",
+    ],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 6,
+    text: "Gviana iliq oqimi materikning qaysi tomonida haraklanadi?",
+    answers: ["Janubida", "Janubi-G'arbida", "Shimoli-Sharqida", "Sharqida"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Materikning janubida joylashgan bo'g'ozni ko'rsating!",
+    answers: ["Gudzon", "Yukatan", "Bering", "Magellan"],
+    correct: 3,
     selection: null,
   },
 ];
@@ -78,7 +94,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function SouthAmericaTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +172,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Janubiy Amerika Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

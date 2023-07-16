@@ -1,10 +1,9 @@
 /* ROOT */
 :root {
-  --main-font-family: "Roboto", "Arial", sans-serif; 
+  --main-font-family: "Roboto", "Arial", sans-serif;
   --main-font-weight: 400;
   --main-body-bg-color: #fff;
 }
-
 
 * {
   box-sizing: border-box;
@@ -24,6 +23,7 @@ body {
   margin: 0;
   font-family: var(--main-font-family);
   font-weight: var(--main-font-weight);
+  color: var(--main-body-bg-color);
   background-color: var(--main-body-bg-color);
 }
 

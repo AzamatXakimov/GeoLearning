@@ -10,47 +10,87 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
-    answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
-    ],
+    text: "Tinch okeanining maydoni yer yuzining qancha qismini egallaydi?",
+    answers: ["38 %", "29 %", "30 %", "21 %"],
     correct: 1,
     selection: null,
   },
   {
     id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
+    text: "Okean g'arbdan sharqqa necha km masofaga cho'zilgan?",
+    answers: ["9 000 km", "7 500 km", "20 000 km", "16 000 km"],
     correct: 2,
     selection: null,
   },
   {
     id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
+    text: "Tinch okeaniga tegishli okeanlar berilgan qatorni keltiring!",
     answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
-      "Barchasi to'g'ri",
+      "Marmar, Qora, Azov",
+      "Ioni, Levant, Egey",
+      "O'rta yer, Pirrey, Adriatika",
+      "Sulu, Sulavesi, Yava, Bali",
     ],
     correct: 3,
     selection: null,
   },
   {
     id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
-    correct: 1,
+    text: "Tinch okean qirg'oqlari atrofida va orollarida nechtadan ortiq davlatlar joylashgan?",
+    answers: ["50", "100", "80", "20"],
+    correct: 0,
     selection: null,
   },
   {
     id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
-    correct: 0,
+    text: "Tinch okeanida yirik va mayda orollar boshqa okeanlarga nisbatan juda keng tarqalgan bo'lib, ularning soni taxminan qancha?",
+    answers: ["1 000", "6 000", "5 000", "10 000"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Tinch okean suvining o'rtacha sho'rligi qancha?",
+    answers: ["34,6 %o", "35,5 %o", "17,9 %o", "35 %o"],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 6,
+    text: "Sovuq oqim ko'rsatilgan qatorni ko'rsating!",
+    answers: ["Kurasio", "Alyaska", "Kaliforniya", "Shimoliy Tinch okean"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Quyidagi cho'kmalarni chuqurligi bo'yicha tartib bilan joylashtiring! \n 1) Volkano, 2) Mariana, 3) Filippin, 4) Tonga, 5) Kermadek",
+    answers: [
+      "5, 4, 1, 3, 2",
+      "2, 4, 3, 5, 1",
+      "1, 3, 2, 5, 4",
+      "1, 2, 3, 4, 5",
+    ],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 8,
+    text: "Tinch okeani havzasiga kiruvchi orollar guruhini belgilang!",
+    answers: [
+      "Feniks, Samoa, Kuk",
+      "Tuamatu, Fidji, Gilbert",
+      "Gavayi, Marshall, Layn",
+      "Barchasi to'g'ri",
+    ],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 9,
+    text: "Tinch okeaniga “Tinch” nomining berilishi qaysi sayohatchining davriga to'g'ri keladi?",
+    answers: ["X.Kolumb", "U.John", "F.Magellan", "J.Kuk"],
+    correct: 2,
     selection: null,
   },
 ];
@@ -78,7 +118,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function PacificOceanTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +196,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Tinch okeani Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">

@@ -10,46 +10,86 @@ import "../../../../styles/tests.scss";
 const questions = [
   {
     id: 0,
-    text: "Azimut qaysi tildan olingan va qanday ma'noni bildiradi?",
-    answers: [
-      "Yunoncha-yo'nalish",
-      "Arabcha-yo'l",
-      "Arabcha-taraf, tomon",
-      "Arabcha-joyni tasvirlayman",
-    ],
-    correct: 1,
+    text: "Quyosh tizimidagi sayyoralar nechta guruhga bo'linadi?",
+    answers: ["2 ta", "3 ta", "4 ta", "5 ta"],
+    correct: 0,
     selection: null,
   },
   {
     id: 1,
-    text: "Azimut necha xil bo'ladi?",
-    answers: ["10 xil", "5 xil", "2 xil", "4 xil"],
-    correct: 2,
-    selection: null,
-  },
-  {
-    id: 2,
-    text: "Azimutga berilgan ta'riflardan qaysi biri to'g'ri?",
+    text: "Quyosh tizimidagi kichik ichki sayyoralar guruhiga kiruvchi sayyoralar berilgan qatorni belgilang!",
     answers: [
-      "Burchaklari shimol yo'nalishidan soat millari harakat yo'nalishi bo'ylab 0° dan 360° gacha hisoblanadi",
-      "U graduslarda o'lchanadi",
-      "Shimol yo'nalishi bilan biror predmet yo'nalishi orasida hosil bo'lgan burchak",
-      "Barchasi to'g'ri",
+      "Saturn, Yupiter, Uran",
+      "Merkuriy, Venera, Yer",
+      "Venera, Mars, Neptun",
+      "Merkuriy, Neptun, Mars",
     ],
-    correct: 3,
-    selection: null,
-  },
-  {
-    id: 3,
-    text: "360° azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Sharq", "Shimol", "Shimoli-g'arb", "G'arb"],
     correct: 1,
     selection: null,
   },
   {
+    id: 2,
+    text: "Quyosh tizimidagi katta tashqi sayyoralar guruhiga kiruvchi sayyoralar berilgan qatorni belgilang!",
+    answers: [
+      "Merkuriy, Neptun, Mars",
+      "Venera, Mars, Neptun",
+      "Saturn, Yupiter, Uran",
+      "Pluton, Mars, Neptun",
+    ],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 3,
+    text: "Merkuriyning og'irligi yernikidan qancha barobar kam?",
+    answers: ["30", "40", "10", "20"],
+    correct: 3,
+    selection: null,
+  },
+  {
     id: 4,
-    text: "135° gradus azimut ufq(gorizont)ning qaysi yo'nalish(tomon)iga mos kelishini aniqlang!",
-    answers: ["Shimoli-sharq", "Janubi-sharq", "Janubi-g'arb", "G'arb"],
+    text: "Sayyoralar ichida qaysi sayyora eng yorug' hisoblanib, uni oddiy ko'z bilan ham ko'rsa bo'ladi?",
+    answers: ["Venera", "Yupiter", "Yer", "Uran"],
+    correct: 0,
+    selection: null,
+  },
+  {
+    id: 5,
+    text: "Quyosh tizimidagi eng katta sayyora berilgan qatorni ko'rsating!",
+    answers: ["Venera", "Neptun", "Saturn", "Yupiter"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 6,
+    text: "Qaysi sayyora qadimiy rimliklarning vaqt va hosil xudosi nomi bilan atalgan?",
+    answers: ["Merkuriy", "Mars", "Saturn", "Neptun"],
+    correct: 2,
+    selection: null,
+  },
+  {
+    id: 7,
+    text: "Uran sayyorasi nechanchi yilda kashf etilgan?",
+    answers: ["1890-yilda", "1781-yilda", "1791-yilda", "1960-yilda"],
+    correct: 1,
+    selection: null,
+  },
+  {
+    id: 8,
+    text: "Quyosh atrofida 165 yer yilida bir marta aylanib chiqadi. U ammiak (74%) va og'ir metallardan (26%) iborat, degan taxmin mavjud. U Quyoshdan kam energiya olganligi sababli yuzasida harorat -292°C. Uning 14 ta yo'ldoshi bor. Ulardan biri Triton gap qaysi sayyora haqida ketmoqda?",
+    answers: ["Pluton", "Saturn", "Mars", "Neptun"],
+    correct: 3,
+    selection: null,
+  },
+  {
+    id: 9,
+    text: "Pluton nechanchi yil kashf qilingan va uning nechta yo'ldoshi bor?",
+    answers: [
+      "1960-yil, 1 ta yo'ldosh",
+      "1690-yil, 2 ta yo'ldosh",
+      "1865-yil, 12 ta yo'ldosh",
+      "1781-yil, 15 ta yo'ldosh",
+    ],
     correct: 0,
     selection: null,
   },
@@ -78,7 +118,7 @@ function QuestionCorrection({ wrong, correct, empty }) {
   );
 }
 
-export function AzimuthTest() {
+export function SolarSystemTest() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [gameSize, setGameSize] = useState({});
@@ -156,7 +196,7 @@ export function AzimuthTest() {
       data-game-finished={question.value > totalQuestion ? true : null}>
       <div className="intro">
         <div className="intro-inner">
-          <h1 className="intro-title">Azimut Test</h1>
+          <h1 className="intro-title">Quyosh sistemasi Test</h1>
           {!gameStarted && (
             <>
               <p className="intro-desc">
