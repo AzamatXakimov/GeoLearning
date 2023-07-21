@@ -3,7 +3,6 @@ import "./styles/styles.scss"
 import { Header } from "./components/Hader/Header";
 import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Main/Home/Home";
-import { HomeTest } from "./pages/Main/HomeTest/HomeTest";
 import { Azimuth } from "./pages/Categoryes/Azimuth/Azimuth/Azimuth";
 import { AzimuthTest } from "./pages/Categoryes/Azimuth/AzimuthTest/AzimuthTest";
 import { Africa } from "./pages/Categoryes/Africa/Africa/Africa";
@@ -87,6 +86,10 @@ import { AzimuthIssues } from "./pages/Categoryes/Azimuth/AzimuthIssues/AzimuthI
 import { HydrosphereIssues } from "./pages/Categoryes/Hydrosphere/HydrosphereIssues/HydrosphereIssues";
 import { OceansIssues } from "./pages/Categoryes/Oceans/OceansIssues/OceansIssues";
 import { SouthAmericaIssues } from "./pages/Categoryes/SouthAmerica/SouthAmericaIssues/SouthAmericaIssues";
+import { EBooks } from "./pages/Departments/EBooks/EBooks";
+import { Presentations } from "./pages/Departments/Presentations/Presentations";
+import { TextInformation } from "./pages/Departments/TextInformation/TextInformation";
+import { AnnotatedDictionary } from "./pages/Departments/AnnotatedDictionary/AnnotatedDictionary";
 
 
 export const App = () => {
@@ -261,6 +264,10 @@ export const App = () => {
 
 
                 {/* DEPARTMENTS PAGES */}
+                <Route path="/departments/e-books" element={<EBooks />}/>
+                <Route path="/departments/presentations" element={<Presentations />}/>
+                <Route path="/departments/text-information" element={<TextInformation />}/>
+                <Route path="/departments/annotated-dictionary" element={<AnnotatedDictionary />}/>
 
 
             </Routes>

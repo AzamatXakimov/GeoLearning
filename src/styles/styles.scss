@@ -130,6 +130,33 @@ button {
   }
 }
 
+.department-list {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.department-item {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 8px;
+  min-height: 80px;
+  // border: 2px solid #fff;
+  background-color: #0e9111;
+  box-shadow: 0px 10px 27px 4px rgba(62, 193, 14, 0.63);
+  transition: box-shadow 0.3s ease, background-color 0.4s ease;
+  &:hover {
+    box-shadow: none;
+    background-color: #045e8e;
+  }
+}
+
 
 @media only screen and (max-width: 1054px) {
   .site-link-list {
