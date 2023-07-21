@@ -5,7 +5,7 @@ import mountainsImg from "../../../../assets/images/africa-mountains.jpeg"
 import questionsImg from "../../../../assets/images/questions.jpeg"
 import plantsImg from "../../../../assets/images/africa-plants.jpeg"
 import D3MapImg from "../../../../assets/images/3d-map.jpg"
-
+import "./Atlantic.scss"
 export const Atlantic = () => {
     const AtlanticLinkInfo = [
         {
@@ -40,7 +40,7 @@ export const Atlantic = () => {
         },
     ]
     return <>
-        <section>
+        <section className="atlantic-section">
             <div className="container">
                 <ul className="site-link-list">
                     {AtlanticLinkInfo.map((item, i) => (

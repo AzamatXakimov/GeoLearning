@@ -3,7 +3,8 @@ import stormImg from "../../../../assets/images/atmosphere-storm.jpeg"
 import sunnySkyImg from "../../../../assets/images/atmosphere-sunny.webp"
 import nightSkyImg from "../../../../assets/images/atmosphere-night.jpeg"
 import cloudyImg from "../../../../assets/images/atmosphere-cloudy.jpeg"
-import bluSkyImg from "../../../../assets/images/atmosphere-blue-sky.webp"
+import bluSkyImg from "../../../../assets/images/atmosphere-blue-sky.webp";
+import "./Atmosphere.scss"
 
 export const Atmosphere = () => {
     const atmosphereLinkInfo = [
@@ -29,7 +30,7 @@ export const Atmosphere = () => {
         },
         {
             text: "Atmosfera Savollar",
-            link: "/atmosphere",
+            link: "/atmosphere/issues",
             img: bluSkyImg,
         },
         {
@@ -39,7 +40,7 @@ export const Atmosphere = () => {
         },
     ]
     return <>
-        <section>
+        <section className="atmosphere-section">
             <div className="container">
                 <ul className="site-link-list">
                     {atmosphereLinkInfo.map((item, i) => (

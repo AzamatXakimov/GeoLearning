@@ -2,6 +2,7 @@ import atlasImg from "../../../../assets/images/atlas.jpg";
 import globe3Img from "../../../../assets/images/globe-3.jpeg";
 import globe5Img from "../../../../assets/images/globe-5.jpg";
 import { LinkCard } from "../../../../components/LinkCard/LinkCard";
+import "./Universe.scss"
 export const Universe = () => {
     const UniverseLinkInfo = [
         {
@@ -21,7 +22,7 @@ export const Universe = () => {
         },
     ]
     return <>
-        <section>
+        <section className="universe-section">
             <div className="container">
                 <ul className="site-link-list">
                     {UniverseLinkInfo.map((item, i) => (

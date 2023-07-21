@@ -32,7 +32,7 @@ export const Home = () => {
         },
         {
             text: "Daryolar",
-            link: "/rivers",
+            link: "/oceans",
             img: riversImg,
         },
         {

@@ -3,6 +3,7 @@ import globe2Img from "../../../../assets/images/globe-2.webp";
 import questionsImg from "../../../../assets/images/questions.jpeg";
 import globeImg from "../../../../assets/images/globe.jpeg"
 import seaImg from "../../../../assets/images/antarctica-sea.jpg"
+import "./Antarctica.scss"
 
 export const Antarctica = () => {
     const africaLinkInfo = [
@@ -33,7 +34,7 @@ export const Antarctica = () => {
         },
     ]
     return <>
-        <section>
+        <section className="antarctica-section">
             <div className="container">
                 <ul className="site-link-list">
                     {africaLinkInfo.map((item, i) => (

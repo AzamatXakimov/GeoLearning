@@ -5,6 +5,7 @@ import ironMapImg from "../../../../assets/images/iron-map.jpeg";
 import globe6Img from "../../../../assets/images/globe-6.jpeg";
 import blueSeaImg from "../../../../assets/images/blue-sea.jpeg";
 import crosswordImg from "../../../../assets/images/crossword.webp";
+import "./Australia.scss"
 export const Australia = () => {
     const PacificOceanLinkInfo = [
         {
@@ -14,7 +15,7 @@ export const Australia = () => {
         },
         {
             text: "Avstraliya nomeklaturasi",
-            link: "/australia",
+            link: "/australia/issues",
             img: ironMapImg,
         },
         {
@@ -39,7 +40,7 @@ export const Australia = () => {
         },
     ]
     return <>
-        <section>
+        <section  className="australia-section">
             <div className="container">
                 <ul className="site-link-list">
                     {PacificOceanLinkInfo.map((item, i) => (

@@ -80,6 +80,13 @@ import { UniverseTest } from "./pages/Categoryes/Universe/UniverseTest/UniverseT
 import { AustraliaTest } from "./pages/Categoryes/Australia/AustraliaTest/AustraliaTest";
 import { AtlanticOceanTest } from "./pages/Categoryes/Atlantic/AtlanticOceanTest/AtlanticOceanTest";
 import { AtmosphereContinue } from "./pages/Categoryes/Atmosphere/AtmosphereContinue/AtmosphereContinue";
+import { AfricaIssues } from "./pages/Categoryes/Africa/AfricaIssues/AfricaIssues";
+import { AtmosphereIssues } from "./pages/Categoryes/Atmosphere/AtmosphereIssues/AtmosphereIssues";
+import { AustraliaIssues } from "./pages/Categoryes/Australia/AustraliaIssues/AustraliaIssues";
+import { AzimuthIssues } from "./pages/Categoryes/Azimuth/AzimuthIssues/AzimuthIssues";
+import { HydrosphereIssues } from "./pages/Categoryes/Hydrosphere/HydrosphereIssues/HydrosphereIssues";
+import { OceansIssues } from "./pages/Categoryes/Oceans/OceansIssues/OceansIssues";
+import { SouthAmericaIssues } from "./pages/Categoryes/SouthAmerica/SouthAmericaIssues/SouthAmericaIssues";
 
 
 export const App = () => {
@@ -90,12 +97,11 @@ export const App = () => {
             <Routes>
                 {/* MAIN PAGES  */}
                 <Route path="/" element={<Home />} />
-                <Route path="/test" element={<HomeTest />} />
-                {/* <Route path="/questions" element={< />} /> */}
+                <Route path="/test" element={<AzimuthTest />} />
+                <Route path="/questions" element={<AfricaIssues />} />
                 <Route path="/combine-answers" element={<CombineAnswers />} />
-                {/* <Route path="/rivers" element={< />} /> */}
                 <Route path="/seas" element={<Seas />} />
-                {/* <Route path="/azimuth-issues" element={< />} /> */}
+                <Route path="/azimuth-issues" element={<AzimuthIssues />} />
                 <Route path="/australian-climate" element={<AustralianClimate />} />
                     {/* MAP  */}
                 <Route path="/indian-ocean/map" element={<IndianOceanMap />} />
@@ -106,6 +112,7 @@ export const App = () => {
                 {/* AZIMUT  */}
                 <Route path="/azimuth" element={<Azimuth />}/>
                 <Route path="/azimuth/test" element={<AzimuthTest />}/>
+                <Route path="/azimuth/issues" element={<AzimuthIssues />}/>
 
                 {/* AFRICA  */}
                 <Route path="/africa" element={<Africa />}/>
@@ -116,6 +123,7 @@ export const App = () => {
                     {/* MAP  */}
                 <Route path="/africa/mountains" element={<AfriceMountains />}/>
                 <Route path="/africa/live-zone" element={<AfricaLiveZones />}/>
+                <Route path="/africa/issues" element={<AfricaIssues />}/>
 
                 {/* Antarctica */}
                 <Route path="/antarctica" element={<Antarctica />}/>
@@ -134,6 +142,7 @@ export const App = () => {
                 <Route path="/atmosphere/crossword" element={<AtmosphereCrossword />}/>
                 <Route path="/atmosphere/continue-sentence" element={<AtmosphereContinue />} />
                 <Route path="/atmosphere/test" element={<AtmosphereTest />} />
+                <Route path="/atmosphere/issues" element={<AtmosphereIssues />} />
 
 
                 {/* Euro Asia */}
@@ -164,6 +173,7 @@ export const App = () => {
                     {/* MAP  */}
                 <Route path="/south-america/hydrography" element={<SouthAmericaHydrography />}/>
                 <Route path="/south-america/test" element={<SouthAmericaTest />} />
+                <Route path="/south-america/issues" element={<SouthAmericaIssues />} />
 
 
                 {/* Pacific Ocean */}
@@ -201,6 +211,7 @@ export const App = () => {
                 <Route path="/hydrosphere/lakes" element={<HydrosphereLakes />}/>
                 <Route path="/hydrosphere/find-hydrosphere" element={<HydrosphereFindAnswer />}/>
                 <Route path="/hydrosphere/find-suitable" element={<HydrosphereFindSuitable />}/>
+                <Route path="/hydrosphere/issues" element={<HydrosphereIssues />}/>
                     {/* MAP  */}
                 <Route path="/hydrosphere/sea" element={<Seas />}/>
 
@@ -214,6 +225,7 @@ export const App = () => {
 
 
                 {/* Oceans */}
+                <Route path="/oceans" element={<OceansIssues />} />
 
 
                 {/* Australia */}
@@ -224,6 +236,7 @@ export const App = () => {
                 <Route path="/australia/crossword" element={<AustraliaCrossword />}/>
                 <Route path="/australia/continue-sentence" element={<AustraliaContinue />}/>
                 <Route path="/australia/test" element={<AustraliaTest />} />
+                <Route path="/australia/issues" element={<AustraliaIssues />} />
 
 
                 {/* Atlantic ocean*/}

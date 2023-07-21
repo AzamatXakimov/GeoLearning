@@ -2,6 +2,7 @@ import { LinkCard } from "../../../../components/LinkCard/LinkCard"
 import sunImg from "../../../../assets/images/sun.jpg";
 import ironBoardImg from "../../../../assets/images/iron-map.jpeg";
 import globe6Img from "../../../../assets/images/globe-6.jpeg";
+import "./SunSystem.scss"
 export const SunSystem = () => {
     const SunSystemLinkInfo = [
         {
@@ -21,7 +22,7 @@ export const SunSystem = () => {
         },
     ]
     return <>
-        <section>
+        <section className="sun-system-section">
             <div className="container">
                 <ul className="site-link-list">
                     {SunSystemLinkInfo.map((item, i) => (

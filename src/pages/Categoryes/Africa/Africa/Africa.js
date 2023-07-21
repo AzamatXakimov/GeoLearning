@@ -4,6 +4,7 @@ import mapAndPhoto from "../../../../assets/images/map-photo.jpeg";
 import questionsImg from "../../../../assets/images/questions.jpeg";
 import plantsImg from "../../../../assets/images/africa-plants.jpeg";
 import mountainsImg from "../../../../assets/images/africa-mountains.jpeg";
+import "./Africa.scss"
 
 export const Africa = () => {
     const africaLinkInfo = [
@@ -24,7 +25,7 @@ export const Africa = () => {
         },
         {
             text: "Afrika Materigi savollar. ",
-            link: "/africa",
+            link: "/africa/issues",
             img: questionsImg,
         },
         {
@@ -34,7 +35,7 @@ export const Africa = () => {
         },
     ]
     return <>
-        <section>
+        <section className="africa-section">
             <div className="container">
                 <ul className="site-link-list">
                     {africaLinkInfo.map((item, i) => (

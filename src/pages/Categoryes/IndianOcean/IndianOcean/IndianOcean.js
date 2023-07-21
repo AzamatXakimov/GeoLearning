@@ -5,6 +5,7 @@ import planetImg from "../../../../assets/images/planet.jpg";
 import cloudySkyImg from "../../../../assets/images/cloudy-sky.jpg";
 import cloudySky2Img from "../../../../assets/images/cloudy-sky-2.jpg";
 import globe2Img from "../../../../assets/images/globe-2.webp";
+import "./IndianOcean.scss"
 
 export const IndianOcean = () => {
     const IndianOceanLinkInfo = [
@@ -35,7 +36,7 @@ export const IndianOcean = () => {
         },
     ]
     return <>
-        <section>
+        <section className='indian-ocean-section'>
             <div className="container">
                 <ul className="site-link-list">
                     {IndianOceanLinkInfo.map((item, i) => (

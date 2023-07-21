@@ -1,6 +1,7 @@
 import { LinkCard } from "../../../../components/LinkCard/LinkCard"
 import globe2Img from "../../../../assets/images/globe-2.webp";
 import mapAndPhoto from "../../../../assets/images/map-photo.jpeg";
+import "./Azimuth.scss"
 export const Azimuth = () => {
     const azimutLinkInfo = [
         {
@@ -10,12 +11,12 @@ export const Azimuth = () => {
         },
         {
             text: "Azimut Masalalar",
-            link: "/azimuth",
+            link: "/azimuth/issues",
             img: mapAndPhoto,
         },
     ]
     return <>
-        <section>
+        <section className="azimut-section">
             <div className="container">
                 <ul className="site-link-list">
                     {azimutLinkInfo.map((item, i) => (

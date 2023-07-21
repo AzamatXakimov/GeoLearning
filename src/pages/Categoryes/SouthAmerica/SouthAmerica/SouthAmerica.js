@@ -1,13 +1,14 @@
 import { LinkCard } from "../../../../components/LinkCard/LinkCard";
 import testPointImg from "../../../../assets/images/test-points.jpg";
 import planetImg from "../../../../assets/images/planet.jpg";
-import seaStormImg from "../../../../assets/images/storm-sea.jpg" 
+import seaStormImg from "../../../../assets/images/storm-sea.jpg" ;
+import "./SouthAmerica.scss"
 
 export const SouthAmerica = () => {
     const SouthAmericaLinkInfo = [
         {
             text: "Janubiy Amerika relyefi",
-            link: "/south-america",
+            link: "/south-america/issues",
             img: planetImg,
         },
         {
@@ -27,7 +28,7 @@ export const SouthAmerica = () => {
         },
     ]
     return <>
-        <section>
+        <section className="south-america-section">
             <div className="container">
                 <ul className="site-link-list">
                     {SouthAmericaLinkInfo.map((item, i) => (

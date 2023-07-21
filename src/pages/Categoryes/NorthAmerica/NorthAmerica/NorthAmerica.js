@@ -4,6 +4,7 @@ import testPointImg from "../../../../assets/images/test-points.jpg";
 import cartoonMap2Img from "../../../../assets/images/cartoon-map-2.jpg";
 import soltSeaImg from "../../../../assets/images/solt-sea.jpg";
 import earlyIslandImg from "../../../../assets/images/early-island.jpg";
+import "./NorthAmerica.scss"
 
 export const NorthAmerica = () => {
     const NorthAmericaLinkInfo = [
@@ -29,7 +30,7 @@ export const NorthAmerica = () => {
         },
     ]
     return <>
-        <section>
+        <section className='north-america-section'>
             <div className="container">
                 <ul className="site-link-list">
                     {NorthAmericaLinkInfo.map((item, i) => (

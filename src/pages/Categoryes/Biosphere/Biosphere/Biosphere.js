@@ -1,6 +1,7 @@
 import { LinkCard } from "../../../../components/LinkCard/LinkCard";
 import mapAndPhoto from "../../../../assets/images/map-photo.jpeg";
 import globe2Img from "../../../../assets/images/globe-2.webp";
+import "./Biosphere.scss"
 export const Biosphere = () => {
     const BiosphereLinkInfo = [
         {
@@ -15,7 +16,7 @@ export const Biosphere = () => {
         },
     ]
     return <>
-        <section>
+        <section className="biosphere-section">
             <div className="container">
                 <ul className="site-link-list">
                     {BiosphereLinkInfo.map((item, i) => (

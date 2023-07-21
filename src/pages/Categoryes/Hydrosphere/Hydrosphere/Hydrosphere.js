@@ -5,6 +5,7 @@ import soltSeaImg from "../../../../assets/images/solt-sea.jpg";
 import piaceOfContinentImg from "../../../../assets/images/piace-of-continent.jpg";
 import cityMapImg from "../../../../assets/images/city-map.jpg";
 import globe4Img from "../../../../assets/images/globe-4.jpg";
+import "./Hydrosphere.scss"
 export const Hydrosphere = () => {
     const BiosphereLinkInfo = [
         {
@@ -14,7 +15,7 @@ export const Hydrosphere = () => {
         },
         {
             text: "Savollar",
-            link: "/hydrosphere",
+            link: "/hydrosphere/issues",
             img: globe3Img,
         },
         {
@@ -39,7 +40,7 @@ export const Hydrosphere = () => {
         },
     ]
     return <>
-        <section>
+        <section className="hydrosphere-section">
             <div className="container">
                 <ul className="site-link-list">
                     {BiosphereLinkInfo.map((item, i) => (

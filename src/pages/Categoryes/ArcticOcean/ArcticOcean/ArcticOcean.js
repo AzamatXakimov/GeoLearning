@@ -3,6 +3,7 @@ import atlasImg from "../../../../assets/images/atlas.jpg";
 import pieceOfContinentImg from "../../../../assets/images/piace-of-continent.jpg";
 import soltSeasImg from "../../../../assets/images/solt-sea.jpg";
 import globe3Img from "../../../../assets/images/globe-3.jpeg";
+import "./ArcticOcean.scss"
 export const ArcticOcean = () => {
     const PacificOceanLinkInfo = [
         {
@@ -27,7 +28,7 @@ export const ArcticOcean = () => {
         },
     ]
     return <>
-        <section>
+        <section className="arctic-ocean-section">
             <div className="container">
                 <ul className="site-link-list">
                     {PacificOceanLinkInfo.map((item, i) => (
