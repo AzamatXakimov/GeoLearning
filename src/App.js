@@ -90,6 +90,7 @@ import { EBooks } from "./pages/Departments/EBooks/EBooks";
 import { Presentations } from "./pages/Departments/Presentations/Presentations";
 import { TextInformation } from "./pages/Departments/TextInformation/TextInformation";
 import { AnnotatedDictionary } from "./pages/Departments/AnnotatedDictionary/AnnotatedDictionary";
+import { Departments } from "./pages/Departments/Departments/Departments";
 
 
 export const App = () => {
@@ -264,6 +265,7 @@ export const App = () => {
 
 
                 {/* DEPARTMENTS PAGES */}
+                <Route path="/departments" element={<Departments />}/>
                 <Route path="/departments/e-books" element={<EBooks />}/>
                 <Route path="/departments/presentations" element={<Presentations />}/>
                 <Route path="/departments/text-information" element={<TextInformation />}/>

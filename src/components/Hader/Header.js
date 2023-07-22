@@ -10,8 +10,8 @@ export const Header = () => {
 						<NavLink to='/'>
 							<h1 className='site-header__logo'>GeoLearning</h1>
 						</NavLink>
-						<NavLink to='/'>
-							<strong className='site-header__page'>Home</strong>
+						<NavLink to='/departments'>
+							<strong className='site-header__page'>Bo'limlar</strong>
 						</NavLink>
 					</nav>
 				</div>
