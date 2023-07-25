@@ -38,7 +38,7 @@ export const IndianOceanSea = () => {
         },
         {
             id: 3,
-            position: [12.5, 92.75],
+            position: [10.782478506804447, 95.68391245270182],
             questions: [
                 {
                     question: "Mauson",
@@ -89,7 +89,7 @@ export const IndianOceanSea = () => {
         },
         {
             id: 6,
-            position: [-66.69417152695385, 140.00225677574738],
+            position: [-65.93622366464564, 127.9524251809677],
             questions: [
                 {
                     question: "Qizil dengiz",
@@ -106,7 +106,7 @@ export const IndianOceanSea = () => {
         },
         {
             id: 7,
-            position: [-67.602746, 62.873726],
+            position: [-67.0180394231364, 62.908819352489324],
             questions: [
                 {
                     question: "Andaman",
@@ -140,7 +140,7 @@ export const IndianOceanSea = () => {
         },
         {
             id: 9,
-            position: [-66.9, 142.666667],
+            position: [-66.41512462138735, 142.63081786978952],
             questions: [
                 {
                     question: "Timor",

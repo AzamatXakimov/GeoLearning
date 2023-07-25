@@ -6,7 +6,7 @@ export const IndianOceanMap = () => {
     const data = [
         {
             id: 1,
-            position: [18.7, 72.9],
+            position: [20.712844761407613, 72.16824368845145],
             questions: [
                 {
                     question: "Kambey qo’ltig’i",
@@ -125,7 +125,7 @@ export const IndianOceanMap = () => {
         },
         {
             id: 8,
-            position: [-23, 35.8],
+            position: [-21.676938047829097, 36.96187232971273],
             questions: [
                 {
                     question: "Mozmbik soyligi",
