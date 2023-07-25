@@ -4,7 +4,7 @@ export const AtlanticMap = () => {
     const data = [
         {
             id: 1,
-            position: [54, -5],
+            position: [53.586561237691335, -1.8277587068983971],
             questions: [
                 {
                     question: "Britaniya orollari",
@@ -104,23 +104,23 @@ export const AtlanticMap = () => {
             isAnswer: "Gvineya qo’ltig’i",
             userAnswer: ""
         },
-        {
-            id: 7,
-            position: [-9.99, -54.998],
-            questions: [
-                {
-                    question: "Braziliya soyligi",
-                },
-                {
-                    question: "Folklend (malvin) orollari",
-                },
-                {
-                    question: "Kap soyligi",
-                },
-            ],
-            isAnswer: "Braziliya soyligi",
-            userAnswer: ""
-        },
+        // {
+        //     id: 7,
+        //     position: [-9.99, -54.998],
+        //     questions: [
+        //         {
+        //             question: "Braziliya soyligi",
+        //         },
+        //         {
+        //             question: "Folklend (malvin) orollari",
+        //         },
+        //         {
+        //             question: "Kap soyligi",
+        //         },
+        //     ],
+        //     isAnswer: "Braziliya soyligi",
+        //     userAnswer: ""
+        // },
         {   
             id: 8,
             position: [-36.5959, -7],
