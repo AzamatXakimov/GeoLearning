@@ -72,7 +72,7 @@ export const HydrosphereLakes = () => {
         },
         {
             id: 5,
-            position: [15.274, 18.677],
+            position: [13.076614382579823, 14.506217373353074],
             questions: [
                 {
                     question: "Chad",

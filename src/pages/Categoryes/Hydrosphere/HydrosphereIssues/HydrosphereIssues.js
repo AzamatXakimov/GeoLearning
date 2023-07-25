@@ -36,119 +36,119 @@ export const HydrosphereIssues = () => {
   };
 
   const handleSubmit = () => {
-    if (in1.current.value.toLowerCase() == "tinch") {
+    if (in1.current.value.toLowerCase() == "tinch" || in1.current.value.toLowerCase() == "tinch okean" || in1.current.value.toLowerCase() == "tinch okeani") {
       in1.current.classList.add("right");
       in1.current.classList.remove("mistake");
     } else {
       in1.current.classList.remove("right");
       in1.current.classList.add("mistake");
     }
-    if (in2.current.value.toLowerCase() == "tinch") {
+    if (in2.current.value.toLowerCase() == "atlantik" || in2.current.value.toLowerCase() == "atlantik okean" || in2.current.value.toLowerCase() == "atlantik okeani") {
       in2.current.classList.add("right");
       in2.current.classList.remove("mistake");
     } else {
       in2.current.classList.remove("right");
       in2.current.classList.add("mistake");
     }
-    if (in3.current.value.toLowerCase() == "tinch") {
+    if (in3.current.value.toLowerCase() == "tinch" || in3.current.value.toLowerCase() == "tinch okean" || in3.current.value.toLowerCase() == "tinch okeani") {
       in3.current.classList.add("right");
       in3.current.classList.remove("mistake");
     } else {
       in3.current.classList.remove("right");
       in3.current.classList.add("mistake");
     }
-    if (in4.current.value.toLowerCase() == "shimoliy muz") {
+    if (in4.current.value.toLowerCase() == "shimoliy muz" || in4.current.value.toLowerCase() == "shimoliy muz okean" || in4.current.value.toLowerCase() == "shimoliy muz okeani") {
       in4.current.classList.remove("mistake");
       in4.current.classList.add("right");
     } else {
       in4.current.classList.add("mistake");
       in4.current.classList.remove("right");
     }
-    if (in5.current.value.toLowerCase() == "shimoliy muz") {
+    if (in5.current.value.toLowerCase() == "shimoliy muz" || in5.current.value.toLowerCase() == "shimoliy muz okean" || in5.current.value.toLowerCase() == "shimoliy muz okeani") {
       in5.current.classList.remove("mistake");
       in5.current.classList.add("right");
     } else {
       in5.current.classList.add("mistake");
       in5.current.classList.remove("right");
     }
-    if (in6.current.value.toLowerCase() == "filippin") {
+    if (in6.current.value.toLowerCase() == "kaspiy" || in6.current.value.toLowerCase() == "kaspiy dengiz" || in6.current.value.toLowerCase() == "kaspiy dengizi") {
       in6.current.classList.remove("mistake");
       in6.current.classList.add("right");
     } else {
       in6.current.classList.add("mistake");
       in6.current.classList.remove("right");
     }
-    if (in7.current.value.toLowerCase() == "filippin") {
-      in7.current.classList.remove("mistake");
-      in7.current.classList.add("right");
-    } else {
-      in7.current.classList.add("mistake");
-      in7.current.classList.remove("right");
-    }
-    if (in8.current.value.toLowerCase() == "boltiq") {
+    // if (in7.current.value.toLowerCase() == "baykal") {
+    //   in7.current.classList.remove("mistake");
+    //   in7.current.classList.add("right");
+    // } else {
+    //   in7.current.classList.add("mistake");
+    //   in7.current.classList.remove("right");
+    // }
+    if (in8.current.value.toLowerCase() == "baltika" || in8.current.value.toLowerCase() == "baltika dengiz" || in8.current.value.toLowerCase() == "baltika dengizi") {
       in8.current.classList.remove("mistake");
       in8.current.classList.add("right");
     } else {
       in8.current.classList.add("mistake");
       in8.current.classList.remove("right");
     }
-    if (in9.current.value.toLowerCase() == "qizil") {
+    if (in9.current.value.toLowerCase() == "qizil" || in9.current.value.toLowerCase() == "qizil dengizi" || in9.current.value.toLowerCase() == "qizil dengiz") {
       in9.current.classList.remove("mistake");
       in9.current.classList.add("right");
     } else {
       in9.current.classList.add("mistake");
       in9.current.classList.remove("right");
     }
-    if (in10.current.value.toLowerCase() == "marmar") {
+    if (in10.current.value.toLowerCase() == "marmar" || in10.current.value.toLowerCase() == "marmar dengiz" || in10.current.value.toLowerCase() == "marmar dengizi") {
       in10.current.classList.remove("mistake");
       in10.current.classList.add("right");
     } else {
       in10.current.classList.add("mistake");
       in10.current.classList.remove("right");
     }
-    if (in11.current.value.toLowerCase() == "ueddell") {
+    if (in11.current.value.toLowerCase() == "sargasso" || in11.current.value.toLowerCase() == "sargasso daryo" || in11.current.value.toLowerCase() == "sargasso daryosi") {
       in11.current.classList.remove("mistake");
       in11.current.classList.add("right");
     } else {
       in11.current.classList.add("mistake");
       in11.current.classList.remove("right");
     }
-    if (in12.current.value.toLowerCase() == "qizil") {
+    if (in12.current.value.toLowerCase() == "qizil" || in12.current.value.toLowerCase() == "qizil dengizi" || in12.current.value.toLowerCase() == "qizil dengiz") {
       in12.current.classList.remove("mistake");
       in12.current.classList.add("right");
     } else {
       in12.current.classList.add("mistake");
       in12.current.classList.remove("right");
     }
-    if (in13.current.value.toLowerCase() == "nil") {
+    if (in13.current.value.toLowerCase() == "amazonka" || in13.current.value.toLowerCase() == "amazonka daryo" || in13.current.value.toLowerCase() == "amazonka daryosi") {
       in13.current.classList.remove("mistake");
       in13.current.classList.add("right");
     } else {
       in13.current.classList.add("mistake");
       in13.current.classList.remove("right");
     }
-    if (in14.current.value.toLowerCase() == "amazonka") {
+    if (in14.current.value.toLowerCase() == "amazonka" || in14.current.value.toLowerCase() == "amazonka daryo" || in14.current.value.toLowerCase() == "amazonka daryosi") {
       in14.current.classList.remove("mistake");
       in14.current.classList.add("right");
     } else {
       in14.current.classList.add("mistake");
       in14.current.classList.remove("right");
     }
-    if (in15.current.value.toLowerCase() == "reprua") {
-      in15.current.classList.remove("mistake");
-      in15.current.classList.add("right");
-    } else {
-      in15.current.classList.add("mistake");
-      in15.current.classList.remove("right");
-    }
-    if (in16.current.value.toLowerCase() == "kaspiy") {
+    // if (in15.current.value.toLowerCase() == "reprua") {
+    //   in15.current.classList.remove("mistake");
+    //   in15.current.classList.add("right");
+    // } else {
+    //   in15.current.classList.add("mistake");
+    //   in15.current.classList.remove("right");
+    // }
+    if (in16.current.value.toLowerCase() == "kaspiy" || in16.current.value.toLowerCase() == "kaspiy ko'li" || in16.current.value.toLowerCase() == "kaspiy ko'l") {
       in16.current.classList.remove("mistake");
       in16.current.classList.add("right");
     } else {
       in16.current.classList.add("mistake");
       in16.current.classList.remove("right");
     }
-    if (in17.current.value.toLowerCase() == "baykal") {
+    if (in17.current.value.toLowerCase() == "baykal" || in17.current.value.toLowerCase() == "baykal ko'l" || in17.current.value.toLowerCase() == "baykal ko'li") {
       in17.current.classList.remove("mistake");
       in17.current.classList.add("right");
     } else {
@@ -157,7 +157,7 @@ export const HydrosphereIssues = () => {
     }
     if (
       in18.current.value.toLowerCase() == "o'lik" ||
-      in18.current.value.toLowerCase() == "o'lik dengizi"
+      in18.current.value.toLowerCase() == "o'lik ko'li" || in18.current.value.toLowerCase() == "o'lik ko'l"
     ) {
       in18.current.classList.remove("mistake");
       in18.current.classList.add("right");
@@ -165,14 +165,14 @@ export const HydrosphereIssues = () => {
       in18.current.classList.add("mistake");
       in18.current.classList.remove("right");
     }
-    if (in19.current.value.toLowerCase() == "anxel") {
+    if (in19.current.value.toLowerCase() == "anxel" || in19.current.value.toLowerCase() == "anxel sharshara" || in19.current.value.toLowerCase() == "anxel sharsharasi") {
       in19.current.classList.remove("mistake");
       in19.current.classList.add("right");
     } else {
       in19.current.classList.add("mistake");
       in19.current.classList.remove("right");
     }
-    if (in20.current.value.toLowerCase() == "niagara") {
+    if (in20.current.value.toLowerCase() == "niagara" || in20.current.value.toLowerCase() == "niagara sharshara" || in20.current.value.toLowerCase() == "niagara sharsharasi") {
       in20.current.classList.remove("mistake");
       in20.current.classList.add("right");
     } else {
@@ -188,7 +188,7 @@ export const HydrosphereIssues = () => {
     in4.current.value = "";
     in5.current.value = "";
     in6.current.value = "";
-    in7.current.value = "";
+    // in7.current.value = "";
     in8.current.value = "";
     in9.current.value = "";
     in10.current.value = "";
@@ -196,7 +196,7 @@ export const HydrosphereIssues = () => {
     in12.current.value = "";
     in13.current.value = "";
     in14.current.value = "";
-    in15.current.value = "";
+    // in15.current.value = "";
     in16.current.value = "";
     in17.current.value = "";
     in18.current.value = "";
@@ -251,12 +251,12 @@ export const HydrosphereIssues = () => {
                 </p>
                 {inputRender(in6)}
               </div>
-              <div className="hydrosphere-issues__box">
+              {/* <div className="hydrosphere-issues__box">
                 <p className="hydrosphere-issues__text">
                   <span>7.</span> Eng chuqur dengiz
                 </p>
                 {inputRender(in7)}
-              </div>
+              </div> */}
               <div className="hydrosphere-issues__box">
                 <p className="hydrosphere-issues__text">
                   <span>8.</span> Eng chuchuk dengiz
@@ -299,12 +299,12 @@ export const HydrosphereIssues = () => {
                 </p>
                 {inputRender(in14)}
               </div>
-              <div className="hydrosphere-issues__box">
+              {/* <div className="hydrosphere-issues__box">
                 <p className="hydrosphere-issues__text">
                   <span>15.</span> Eng kichik daryo
                 </p>
                 {inputRender(in15)}
-              </div>
+              </div> */}
               <div className="hydrosphere-issues__box">
                 <p className="hydrosphere-issues__text">
                   <span>16.</span> Eng katta ko'l
