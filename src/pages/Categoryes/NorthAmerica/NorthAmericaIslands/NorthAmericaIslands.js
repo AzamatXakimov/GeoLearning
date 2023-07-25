@@ -84,7 +84,7 @@ export const NorthAmericaIslands = () => {
                     question: "Baffin Yeri oroli",
                 },
             ],
-            isAnswer: "Baffin Yeri",
+            isAnswer: "Baffin Yeri oroli",
             userAnswer: ""
         },
         {

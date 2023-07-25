@@ -33,7 +33,7 @@ export const NorthAmericaHydrography = () => {
                     question: "Yuqori ko’li",
                 },
             ],
-            isAnswer: "Makkenzi daryosi4",
+            isAnswer: "Makkenzi daryosi",
             userAnswer: ""
         },
         {
