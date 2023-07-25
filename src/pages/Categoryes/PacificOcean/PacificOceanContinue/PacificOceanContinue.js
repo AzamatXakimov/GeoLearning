@@ -49,7 +49,7 @@ export const PacificOceanContinue = () => {
             inp4.current.classList.remove("right")
         }
 
-        if(inp5.current.value.toLowerCase() == "avstarliya") {
+        if(inp5.current.value.toLowerCase() == "avstraliya") {
             inp5.current.classList.remove("mistake")
             inp5.current.classList.add("right")
         }
