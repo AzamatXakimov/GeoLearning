@@ -11,7 +11,7 @@ export const AustraliaCrossword = () => {
 				clue: "G'arbiy Avstraliya yassi tog'ligidagi cho'l hududlarida, qisman markaziy tekislikda ham katta maydonlarni …………………..deb ataladigan cho'llar egallagan. Avstraliyada bular tarkibiga ikki o'simlik avlodlariga mansub bo'lgan qattiq bargli g'allagullilar kiritiladi.",
                 answer: "SPINIFEKS",
 				row: 0,
-				col: 1,
+				col: 2,
 			},
 			2: {
 				clue: "Avstraliya uchun endemik hayvonni ayting?",
@@ -31,7 +31,7 @@ export const AustraliaCrossword = () => {
 				clue: "Avstraliyada tikanli butalar o'sgan chakalakzorlardan yoki qalin mayda bargli daraxtzorlardan iborat, ko'proq akatsiya va evkaliptlar o'sadigan joylar nima deb ataladi?",
                 answer: "SKREB",
 				row: 2,
-				col: 2,
+				col: 1,
 			},
             5: {
 				clue: "Avstraliyaga xos endemik o'simlikni nomini ayting?",

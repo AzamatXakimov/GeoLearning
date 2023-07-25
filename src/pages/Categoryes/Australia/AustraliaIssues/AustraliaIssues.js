@@ -51,7 +51,7 @@ export const AustraliaIssues = () => {
       in4.current.classList.remove("right");
       in4.current.classList.add("mistake");
     }
-    if (in5.current.value.toLowerCase() == "tog' sistemasi") {
+    if (in5.current.value.toLowerCase() == "tog' sistemasi" || in5.current.value.toLowerCase() == "tog'") {
       in5.current.classList.add("right");
       in5.current.classList.remove("mistake");
     } else {

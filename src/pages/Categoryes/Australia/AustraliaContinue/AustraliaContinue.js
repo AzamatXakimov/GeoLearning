@@ -16,7 +16,7 @@ export const AustraliaContinue = () => {
 
 
     const hendelSubmit = () => {
-        if(inp1.current.value.toLowerCase() == "1.600" || inp1.current.value.toLowerCase() == "1,600") {
+        if(inp1.current.value.toLowerCase() == "1.600" || inp1.current.value.toLowerCase() == "1,600" || inp1.current.value.toLowerCase() == "1600") {
             inp1.current.classList.remove("mistake")
             inp1.current.classList.add("right")
         }

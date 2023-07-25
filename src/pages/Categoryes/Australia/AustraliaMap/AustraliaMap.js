@@ -72,7 +72,7 @@ export const AustraliaMap = () => {
         },
         {
             id: 5,
-            position: [-35.5586, 138.8799],
+            position: [-35.203026907555675, 139.3719333707566],
             questions: [
                 {
                     question: "Murrey daryosi",
