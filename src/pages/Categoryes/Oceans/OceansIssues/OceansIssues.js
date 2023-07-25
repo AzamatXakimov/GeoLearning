@@ -26,14 +26,14 @@ export const OceansIssues = () => {
   };
 
   const handleSubmit = () => {
-    if (in1.current.value.toLowerCase() == "tinch") {
+    if (in1.current.value.toLowerCase() == "tinch" || in1.current.value.toLowerCase() == "tinch okeani") {
       in1.current.classList.add("right");
       in1.current.classList.remove("mistake");
     } else {
       in1.current.classList.remove("right");
       in1.current.classList.add("mistake");
     }
-    if (in2.current.value.toLowerCase() == "tinch") {
+    if (in2.current.value.toLowerCase() == "tinch" || in2.current.value.toLowerCase() == "tinch okeani") {
       in2.current.classList.add("right");
       in2.current.classList.remove("mistake");
     } else {
@@ -47,49 +47,49 @@ export const OceansIssues = () => {
       in3.current.classList.remove("right");
       in3.current.classList.add("mistake");
     }
-    if (in4.current.value.toLowerCase() == "tinch") {
+    if (in4.current.value.toLowerCase() == "tinch" || in4.current.value.toLowerCase() == "tinch okeani") {
       in4.current.classList.remove("mistake");
       in4.current.classList.add("right");
     } else {
       in4.current.classList.add("mistake");
       in4.current.classList.remove("right");
     }
-    if (in5.current.value.toLowerCase() == "shimoliy muz") {
+    if (in5.current.value.toLowerCase() == "shimoliy muz" || in5.current.value.toLowerCase() == "shimoliy muz okeani") {
       in5.current.classList.remove("mistake");
       in5.current.classList.add("right");
     } else {
       in5.current.classList.add("mistake");
       in5.current.classList.remove("right");
     }
-    if (in6.current.value.toLowerCase() == "tinch") {
+    if (in6.current.value.toLowerCase() == "hind" || in6.current.value.toLowerCase() == "hind okeani") {
       in6.current.classList.remove("mistake");
       in6.current.classList.add("right");
     } else {
       in6.current.classList.add("mistake");
       in6.current.classList.remove("right");
     }
-    if (in7.current.value.toLowerCase() == "shimoliy muz") {
+    if (in7.current.value.toLowerCase() == "shimoliy muz" || in7.current.value.toLowerCase() == "shimoliy muz okeani") {
       in7.current.classList.remove("mistake");
       in7.current.classList.add("right");
     } else {
       in7.current.classList.add("mistake");
       in7.current.classList.remove("right");
     }
-    if (in8.current.value.toLowerCase() == "hind") {
+    if (in8.current.value.toLowerCase() == "hind" || in8.current.value.toLowerCase() == "hind okeani") {
       in8.current.classList.remove("mistake");
       in8.current.classList.add("right");
     } else {
       in8.current.classList.add("mistake");
       in8.current.classList.remove("right");
     }
-    if (in9.current.value.toLowerCase() == "tinch") {
+    if (in9.current.value.toLowerCase() == "tinch" || in9.current.value.toLowerCase() == "tinch okeani") {
       in9.current.classList.remove("mistake");
       in9.current.classList.add("right");
     } else {
       in9.current.classList.add("mistake");
       in9.current.classList.remove("right");
     }
-    if (in10.current.value.toLowerCase() == "golfstirim") {
+    if (in10.current.value.toLowerCase() == "tinch" || in10.current.value.toLowerCase() == "tinch okeani") {
       in10.current.classList.remove("mistake");
       in10.current.classList.add("right");
     } else {
