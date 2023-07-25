@@ -21,7 +21,7 @@ export const SouthAmericaHydrography = () => {
         },
         {
             id: 2,
-            position: [8.6192, -60.7053],
+            position: [8.263463129750397, -63.27774218655933],
             questions: [
                 {
                     question: "Orinoko daryosi",
@@ -55,7 +55,7 @@ export const SouthAmericaHydrography = () => {
         },
         {
             id: 4,
-            position: [-0.5931, -49.9562],
+            position: [-0.12556562328602366, -51.05645526292009],
             questions: [
                 {
                     question: "Paragvay daryosi",
@@ -72,7 +72,7 @@ export const SouthAmericaHydrography = () => {
         },
         {
             id: 5,
-            position: [-1.7285, -49.1762],
+            position: [-2.7551162616339875, -49.681448763068836],
             questions: [
                 {
                     question: "Tokantins daryosi",
@@ -89,7 +89,7 @@ export const SouthAmericaHydrography = () => {
         },
         {
             id: 6,
-            position: [-10.5042, -36.3943],
+            position: [-9.951547429065199, -37.087789052592434],
             questions: [
                 {
                     question: "Parana daryosi",
@@ -191,7 +191,7 @@ export const SouthAmericaHydrography = () => {
         },
         {
             id: 12,
-            position: [-33.9458, -58.4092],
+            position: [-33.107009846419245, -58.38048673260001],
             questions: [
                 {
                     question: "Marakaybo ko’li",

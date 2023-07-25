@@ -4,7 +4,7 @@ export const SouthAmericaNomeclature = () => {
     const data = [
         {
             id: 1,
-            position: [8.619, -60.7055],
+            position: [7.689710751552365, -65.97596039468046],
             questions: [
                 {
                     question: "Manu milliy bog’i",
@@ -89,7 +89,7 @@ export const SouthAmericaNomeclature = () => {
         },
         {
             id: 6,
-            position: [-22.467, -45],
+            position: [-16.106727578804197, -46.75480835204569],
             questions: [
                 {
                     question: "Chimboroso tog’i",
@@ -106,7 +106,7 @@ export const SouthAmericaNomeclature = () => {
         },
         {
             id: 7,
-            position: [-32, -60],
+            position: [-30.075853521552357, -60.38625576839914],
             questions: [
                 {
                     question: "Chimboroso tog’i",
