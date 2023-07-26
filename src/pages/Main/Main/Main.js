@@ -22,9 +22,11 @@ export const Main = () => {
                                     GeoLearning
                                 </h1>
                                 <p className='main-hero-desc'>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis maxime omnis sunt ut. Assumenda aut commodi cum doloribus maiores molestiae, nemo recusandae repudiandae rerum saepe sequi suscipit, temporibus vitae.
+                                    geolearning.uz geografik bilimlarni hammaga ochiq interaktiv modullar orqali o`rganish va o`qitishni qo`llab quvvatlash uchun mo`ljallangan. Ushbu geografik topshiriqlar onlayn tarzda yaratilgan va keyinchalik  o`quv jarayonida  qo`llanilishi mumkun.
+                                    
+                                    Veb sayt oliy talimda tahsil olayotgan geografiya ta`lim yo`nalishidagi talabalar va  fanga qiziquvchi foydalanuvchilar uchun ishlab chiqilgan.
                                 </p>
-                                <Link className='main-hero-link' to="/home">Mavzularni ko'rish</Link>
+                                <Link className='main-hero-link' to="/home">Asosy oynaga o'tish</Link>
                             </div>
                             <img className='main-hero-img' src={mainImg} alt="Hero image" />
                         </div>

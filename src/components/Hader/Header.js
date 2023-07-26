@@ -11,7 +11,7 @@ export const Header = () => {
 							<h1 className='site-header__logo'>GeoLearning</h1>
 						</NavLink>
 						<NavLink to='departments'>
-							<strong className='site-header__page'>Bo'limlar</strong>
+							<strong className='site-header__page'>Metodik yordam</strong>
 						</NavLink>
 					</nav>
 				</div>
