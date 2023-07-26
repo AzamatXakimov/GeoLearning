@@ -6,12 +6,12 @@ export const Biosphere = () => {
     const BiosphereLinkInfo = [
         {
             text: "Biosfer Test",
-            link: "/biosphere/test",
+            link: "test",
             img: globe2Img,
         },
         {
             text: "Javoblarni birlashtiring",
-            link: "/biosphere/combine-answers",
+            link: "combine-answers",
             img: mapAndPhoto,
         },
     ]

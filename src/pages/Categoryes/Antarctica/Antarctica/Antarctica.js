@@ -9,7 +9,7 @@ export const Antarctica = () => {
     const africaLinkInfo = [
         {
             text: "Antarktida Test",
-            link: "/antarctica/test",
+            link: "test",
             img: globe2Img,
         },
         // {
@@ -19,17 +19,17 @@ export const Antarctica = () => {
         // },
         {
             text: "Antarktida materigi nomenklaturasi",
-            link: "/antarctica/nomenclature",
+            link: "nomenclature",
             img: globeImg,
         },
         {
             text: "Antarktida tog`ri xatoga ajratish.",
-            link: "/antarctica/answer-separate",
+            link: "answer-separate",
             img: questionsImg,
         },
         {
             text: "Antarktida materigi atrofidagi dengizlarni belgilang",
-            link: "/antarctica/sea-map",
+            link: "sea-map",
             img: seaImg,
         },
     ]

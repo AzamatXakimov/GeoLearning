@@ -9,22 +9,22 @@ export const Departments = () => {
     const departmentsLinks = [
         {
             text: "Elektron kutubxona",
-            link: "/departments/e-books",
+            link: "e-books",
             img: eBookImg,
         },
         {
             text: "Taqdimotlar",
-            link: "/departments/presentations",
+            link: "presentations",
             img: presentationsImg,
         },
         {
             text: "Matnli malumotlar",
-            link: "/departments/text-information",
+            link: "text-information",
             img: textInformationImg,
         },
         {
             text: "Izohli lug'at",
-            link: "/departments/annotated-dictionary",
+            link: "annotated-dictionary",
             img: AnnotatedDictionaryImg,
         },
     ]

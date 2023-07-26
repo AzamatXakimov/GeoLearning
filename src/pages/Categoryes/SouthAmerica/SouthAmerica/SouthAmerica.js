@@ -8,22 +8,22 @@ export const SouthAmerica = () => {
     const SouthAmericaLinkInfo = [
         {
             text: "Janubiy Amerika relyefi",
-            link: "/south-america/issues",
+            link: "issues",
             img: planetImg,
         },
         {
             text: "Test",
-            link: "/south-america/test",
+            link: "test",
             img: testPointImg,
         },
         {
             text: "Janubiy Amerika nomenklaturasi",
-            link: "/south-america/nomenclature",
+            link: "nomenclature",
             img: planetImg,
         },
         {
             text: "Janubiy Amerika gidrografiyasi",
-            link: "/south-america/hydrography",
+            link: "hydrography",
             img: seaStormImg,
         },
     ]

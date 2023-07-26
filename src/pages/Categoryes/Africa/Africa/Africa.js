@@ -10,27 +10,27 @@ export const Africa = () => {
     const africaLinkInfo = [
         {
             text: "Afrika Xarita",
-            link: "/africa/map",
+            link: "map",
             img: globe2Img,
         },
         {
             text: "Afrika Materigi gidrografiyasi.",
-            link: "/africa/hydrography",
+            link: "hydrography",
             img: mapAndPhoto,
         },
         {
             text: "Afrika Materigi tog`lari.",
-            link: "/africa/mountains",
+            link: "mountains",
             img: mountainsImg,
         },
         {
             text: "Afrika Materigi savollar. ",
-            link: "/africa/issues",
+            link: "issues",
             img: questionsImg,
         },
         {
             text: "Afrika Materigi tabiat zonalari",
-            link: "/africa/live-zone",
+            link: "live-zone",
             img: plantsImg,
         },
     ]

@@ -6,12 +6,12 @@ export const Azimuth = () => {
     const azimutLinkInfo = [
         {
             text: "Azimut Test",
-            link: "/azimuth/test",
+            link: "test",
             img: globe2Img,
         },
         {
             text: "Azimut Masalalar",
-            link: "/azimuth/issues",
+            link: "issues",
             img: mapAndPhoto,
         },
     ]

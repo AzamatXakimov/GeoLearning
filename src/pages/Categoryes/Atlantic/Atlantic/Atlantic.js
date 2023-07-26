@@ -10,32 +10,32 @@ export const Atlantic = () => {
     const AtlanticLinkInfo = [
         {
             text: "Test",
-            link: "/atlantic/test",
+            link: "test",
             img: globe2Img,
         },
         {
             text: "Savollar",
-            link: "/atlantic/continue-sentence",
+            link: "continue-sentence",
             img: mapAndPhotoImg,
         },
         {
             text: "Moslashtirish",
-            link: "/atlantic/adaptation",
+            link: "adaptation",
             img: mountainsImg,
         },
         {
             text: "Oqimlar",
-            link: "/atlantic/currents",
+            link: "currents",
             img: questionsImg,
         },
         {
             text: "Tabiat zonalari",
-            link: "/atlantic/nature-zones",
+            link: "nature-zones",
             img: plantsImg,
         },
         {
             text: "Xarita",
-            link: "/atlantic/map",
+            link: "map",
             img: D3MapImg,
         },
     ]

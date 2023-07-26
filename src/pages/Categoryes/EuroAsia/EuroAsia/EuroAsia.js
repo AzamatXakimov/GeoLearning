@@ -7,17 +7,17 @@ export const EuroAsia = () => {
     const EuroAsiaLinkInfo = [
         {
             text: "Yevrosiyo materigi nomenklaturasi",
-            link: "/euro-asia/nomenclature",
+            link: "nomenclature",
             img: cartoonMapImg,
         },
         {
             text: "Yevrosiyo materigi daryolari",
-            link: "/euro-asia/rivers",
+            link: "rivers",
             img: riversImg,
         },
         {
             text: "Yevrosiyo materigi tog'lari",
-            link: "/euro-asia/mountains",
+            link: "mountains",
             img: mountains2Img,
         },
     ]

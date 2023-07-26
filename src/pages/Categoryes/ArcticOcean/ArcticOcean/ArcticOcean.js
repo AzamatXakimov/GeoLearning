@@ -8,17 +8,17 @@ export const ArcticOcean = () => {
     const PacificOceanLinkInfo = [
         {
             text: "Test",
-            link: "/arctic-ocean/test",
+            link: "test",
             img: atlasImg,
         },
         {
             text: "Oqimlar",
-            link: "/arctic-ocean/currents",
+            link: "currents",
             img: globe3Img,
         },
         {
             text: "Gidrosfera Mosini topish",
-            link: "/arctic-ocean/continue-sentence",
+            link: "continue-sentence",
             img: soltSeasImg,
         },
         {

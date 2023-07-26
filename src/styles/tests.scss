@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 
-body {
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "Open Sans", sans-serif;
   background-color: #1c1d20;
   background: rgb(149, 233, 227);
@@ -13,9 +16,12 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
+  background-image: url(https://wallpaperaccess.com/full/126463.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   &:after {
     content: "";
-    background-image: url(https://wallpaperaccess.com/full/126463.jpg);
     position: fixed;
     left: 0;
     top: 0;

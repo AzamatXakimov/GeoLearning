@@ -7,17 +7,17 @@ export const SunSystem = () => {
     const SunSystemLinkInfo = [
         {
             text: "Quyoshning Tuzulishi",
-            link: "/sun-system/crossword",
+            link: "crossword",
             img: sunImg,
         },
         {
             text: "Test",
-            link: "/sun-system/test",
+            link: "test",
             img: ironBoardImg,
         },
         {
             text: "Javoblarni kiriting",
-            link: "/sun-system/continue-sentence",
+            link: "continue-sentence",
             img: globe6Img,
         },
     ]

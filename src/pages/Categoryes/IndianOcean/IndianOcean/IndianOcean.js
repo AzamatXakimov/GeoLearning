@@ -11,27 +11,27 @@ export const IndianOcean = () => {
     const IndianOceanLinkInfo = [
         {
             text: "Test",
-            link: "/indian-ocean/test",
+            link: "test",
             img: globe2Img,
         },
         {
             text: "Hind okeani dengizlari",
-            link: "/indian-ocean/sea-map",
+            link: "sea-map",
             img: mapAndPhoto,
         },
         {
             text: "Hind okeani nomenklaturasi.",
-            link: "/indian-ocean/map",
+            link: "map",
             img: planetImg,
         },
         {
             text: "Hind okeani iqlimi.",
-            link: "/indian-ocean/climate",
+            link: "climate",
             img: cloudySky2Img,
         },
         {
             text: "Hind okeani oqimlari.",
-            link: "/indian-ocean/currents",
+            link: "currents",
             img: cloudySkyImg,
         },
     ]

@@ -10,32 +10,32 @@ export const Atmosphere = () => {
     const atmosphereLinkInfo = [
         {
             text: "Atmosfera Test",
-            link: "/atmosphere/test",
+            link: "test",
             img: stormImg,
         },
         {
             text: "Atmosfera Krossvord",
-            link: "/atmosphere/crossword",
+            link: "crossword",
             img: sunnySkyImg,
         },
         {
             text: "Atmosfera Savollar",
-            link: "/atmosphere/continue-sentence",
+            link: "continue-sentence",
             img: nightSkyImg,
         },
         {
             text: "Atmosfera to`g`ri va No To`gri",
-            link: "/atmosphere/true-false",
+            link: "true-false",
             img: cloudyImg,
         },
         {
             text: "Atmosfera Savollar",
-            link: "/atmosphere/issues",
+            link: "issues",
             img: bluSkyImg,
         },
         {
             text: "Javoblarni birlashtirng",
-            link: "/atmosphere/combine-answers",
+            link: "combine-answers",
             img: stormImg,
         },
     ]

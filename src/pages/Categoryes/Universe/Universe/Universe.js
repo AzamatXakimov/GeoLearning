@@ -7,17 +7,17 @@ export const Universe = () => {
     const UniverseLinkInfo = [
         {
             text: "Test",
-            link: "/universe/test",
+            link: "test",
             img: atlasImg,
         },
         {
             text: "Krossvord",
-            link: "/universe/crossword",
+            link: "crossword",
             img: globe3Img,
         },
         {
             text: "Rasmlarni joylashtiring",
-            link: "/universe/combine-pictures",
+            link: "combine-pictures",
             img: globe5Img,
         },
     ]

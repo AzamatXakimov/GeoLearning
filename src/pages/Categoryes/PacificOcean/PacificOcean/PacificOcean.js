@@ -8,17 +8,17 @@ export const PacificOcean = () => {
     const PacificOceanLinkInfo = [
         {
             text: "Tinch okeani savollar",
-            link: "/pacific-ocean/continue-sentence",
+            link: "continue-sentence",
             img: seaarchMapImg,
         },
         {
             text: "Tinch Okeani Testlari",
-            link: "/pacific-ocean/test",
+            link: "test",
             img: mapOnBoardImg,
         },
         {
             text: "Tinch okeani",
-            link: "/pacific-ocean/combine-answers",
+            link: "combine-answers",
             img: globe2Img,
         },
     ]

@@ -17,42 +17,42 @@ export const Home = () => {
     const homeLinksInfo = [
         {
             text: "Test",
-            link: "/test",
+            link: "test",
             img: mapAndPhoto,
         },
         {
             text: "Savollar",
-            link: "/questions",
+            link: "questions",
             img: questionsImg,
         },
         {
             text: "Javoblarni birlashtiring",
-            link: "/combine-answers",
+            link: "combine-answers",
             img: skyImg,
         },
         {
             text: "Daryolar",
-            link: "/oceans",
+            link: "oceans",
             img: riversImg,
         },
         {
             text: "Dengizlar",
-            link: "/seas",
+            link: "seas",
             img: mapAndPhoto,
         },
         {
             text: "Azimut masalalar",
-            link: "/azimuth-issues",
+            link: "azimuth-issues",
             img: cloudySkyImg,
         },
         {
             text: "Avstralia iqlimi",
-            link: "/australian-climate",
+            link: "australian-climate",
             img: stormSkyImg,
         },
         {
             text: "Hind okeani nomenklaturasi",
-            link: "/indian-ocean/map",
+            link: "indian-ocean/map",
             img: planetImg,
         },
     ]

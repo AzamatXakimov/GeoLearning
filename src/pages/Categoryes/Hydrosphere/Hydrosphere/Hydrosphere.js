@@ -10,32 +10,32 @@ export const Hydrosphere = () => {
     const BiosphereLinkInfo = [
         {
             text: "Gidrosfera Mosini topish",
-            link: "/hydrosphere/find-suitable",
+            link: "find-suitable",
             img: atlasImg,
         },
         {
             text: "Savollar",
-            link: "/hydrosphere/issues",
+            link: "issues",
             img: globe3Img,
         },
         {
             text: "Gidrosfera Mosini topish",
-            link: "/hydrosphere/find-hydrosphere",
+            link: "find-hydrosphere",
             img: soltSeaImg,
         },
         {
             text: "Dengizlarni belgilang.",
-            link: "/hydrosphere/sea",
+            link: "sea",
             img: piaceOfContinentImg,
         },
         {
             text: "Daryolarni belgilang.",
-            link: "/hydrosphere/rivers",
+            link: "rivers",
             img: cityMapImg,
         },
         {
             text: "Ko'llarni belgilang.",
-            link: "/hydrosphere/lakes",
+            link: "lakes",
             img: globe4Img,
         },
     ]

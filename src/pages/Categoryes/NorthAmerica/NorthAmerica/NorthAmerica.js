@@ -10,22 +10,22 @@ export const NorthAmerica = () => {
     const NorthAmericaLinkInfo = [
         {
             text: "Test",
-            link: "/north-america/test",
+            link: "test",
             img: testPointImg,
         },
         {
             text: "Shimoliy Amerika Nomeklaturasi",
-            link: "/north-america/nomenclature",
+            link: "nomenclature",
             img: cartoonMap2Img,
         },
         {
             text: "Shimoliy Amerika Gidrografiyasi",
-            link: "/north-america/hydrography",
+            link: "hydrography",
             img: soltSeaImg,
         },
         {
             text: "Shimoliy Amerika Orollari",
-            link: "/north-america/islands",
+            link: "islands",
             img: earlyIslandImg,
         },
     ]

@@ -10,32 +10,32 @@ export const Australia = () => {
     const PacificOceanLinkInfo = [
         {
             text: "Avstraliya Xarita",
-            link: "/australia/map",
+            link: "map",
             img: globe2Img,
         },
         {
             text: "Avstraliya nomeklaturasi",
-            link: "/australia/issues",
+            link: "issues",
             img: ironMapImg,
         },
         {
             text: "Avstraliya Test",
-            link: "/australia/test",
+            link: "test",
             img: globe6Img,
         },
         {
             text: "Avstraliya Iqlimi",
-            link: "/australia/climate",
+            link: "climate",
             img: stormImg,
         },
         {
             text: "Avstraliya Materigi Ichki Suvlari",
-            link: "/australia/continue-sentence",
+            link: "continue-sentence",
             img: blueSeaImg,
         },
         {
             text: "Avstraliya Materigining Tabiat Mintaqalari",
-            link: "/australia/crossword",
+            link: "crossword",
             img: crosswordImg,
         },
     ]
