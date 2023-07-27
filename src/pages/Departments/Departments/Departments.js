@@ -35,7 +35,7 @@ export const Departments = () => {
                     {departmentsLinks.map((item, index) => {
                     return (
                         <li className="site-home-tasks-item" key={index}>
-                            <LinkCard obj={item} />
+                            <LinkCard obj={item} textColour="black" />
                         </li>
                     );
                     })}

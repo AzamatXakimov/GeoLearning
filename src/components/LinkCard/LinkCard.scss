@@ -18,6 +18,10 @@
     font-size: 1.75rem;
     color: #fff;
     text-align: center;
+
+    &.black {
+        color: #000;
+    }
 }
 
 .link-card-img {
