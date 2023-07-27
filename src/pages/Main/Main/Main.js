@@ -26,7 +26,7 @@ export const Main = () => {
                                     
                                     Veb sayt oliy talimda tahsil olayotgan geografiya ta`lim yo`nalishidagi talabalar va  fanga qiziquvchi foydalanuvchilar uchun ishlab chiqilgan.
                                 </p>
-                                <Link className='main-hero-link' to="/home">Asosy oynaga o'tish</Link>
+                                <Link className='main-hero-link' to="/home">Asosiy oynaga o'tish</Link>
                             </div>
                             <img className='main-hero-img' src={mainImg} alt="Hero image" />
                         </div>
